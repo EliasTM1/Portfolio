@@ -11,6 +11,7 @@ import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
 import { ProfileComponent } from './profile.component';
 import { FormsModule } from '@angular/forms';
+import { ProjectCardComponent } from './project-card/project-card.component';
 
 
 
@@ -25,7 +26,8 @@ import { FormsModule } from '@angular/forms';
     ReferenceComponent,
     ContactComponent,
     FooterComponent,
-    ProfileComponent
+    ProfileComponent,
+    ProjectCardComponent
   ],
   imports: [
     CommonModule,

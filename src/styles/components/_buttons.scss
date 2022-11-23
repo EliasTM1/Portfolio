@@ -1,0 +1,13 @@
+@mixin clear-button {
+  color: black;
+  background-color: white;
+  padding: .5rem 1rem;
+  border-radius: 20px;
+  border: 1px $black solid;
+}
+
+@mixin black-button {
+  @include clear-button();
+  background-color: black;
+  color: white;
+}

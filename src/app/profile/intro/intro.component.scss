@@ -1,4 +1,5 @@
 @import '/src/styles/_abstracts-dir';
+@import '/src/styles/_components-dir';
 //  Mobile
   .intro-container{
     display: flex;
@@ -34,16 +35,11 @@
     justify-content: space-evenly;
     margin: 2rem 0;
     button{
-      color: black;
-      background-color: white;
-      padding: .5rem 1rem;
-      border-radius: 20px;
-      border: 1px $black solid;
+      @include clear-button;
     }
 
     .dark-button{
-      background-color: black;
-      color: white;
+      @include black-button;
     }
   }
 
@@ -60,7 +56,7 @@
     .image-container {
       display: flex;
       justify-content: center;
-      margin: 5rem auto;
+      margin: 4rem auto;
       max-width: 50%;
       // img{
       //   max-width: 70%;
