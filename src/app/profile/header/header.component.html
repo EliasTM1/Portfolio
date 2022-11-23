@@ -1,0 +1,20 @@
+<header>
+  <nav>
+    <div class="logos">E T M</div>
+    <div [ngClass]="collapse === true ? 'nav-container' : 'nav-container-active'">
+      <ul (click)="toggleCollapse()">
+        <li>Work</li>
+        <li>Resume</li>
+        <li>Contact</li>
+        <li>EN | ES</li>
+      </ul>
+    </div>
+  <div class="burger-container" (click)="toggleCollapse()">
+    <button class="hamburger hamburger--emphatic burger" [ngClass]="collapse === false ? 'is-active' : '' " type="button">
+      <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+      </span>
+    </button>
+  </div>
+</nav>
+</header>
