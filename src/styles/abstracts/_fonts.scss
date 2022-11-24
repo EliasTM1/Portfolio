@@ -8,3 +8,15 @@ $secondary-sans-serif: 'Source Sans Pro', sans-serif;
       font-size: 3rem;
       margin: 2rem auto;
 }
+
+@mixin dark-header {
+  text-align: justify;
+  background-color: $black;
+  color: white;
+  text-align: center;
+  font-size: 1.5rem;
+  width: 15rem;
+  padding: auto 2rem;
+  padding-top: .2rem;
+  letter-spacing: .1rem;
+}

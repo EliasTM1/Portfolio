@@ -1,0 +1,67 @@
+@import '/src/styles/_abstracts-dir';
+// Mobile
+.section-header{
+  .section-title{
+    @include section-title;
+  }
+
+  .section-description {
+    text-align: center;
+    width: 90%;
+    margin: auto auto 2rem auto;
+  }
+
+  .sub-section-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .sub-header{
+    text-align: justify;
+    background-color: $black;
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    width: 15rem;
+    padding: auto 2rem;
+    padding-top: .2rem;
+    letter-spacing: .1rem;
+  }
+
+  .experience-sub{
+    border: 3px solid $black;
+    padding: 1rem;
+    width: 90%;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    .company-name{
+      font-size: 1.3rem;
+      letter-spacing: .1rem;
+    }
+    .date-loaction{
+      // margin-bottom: 1rem;
+      div{
+        width: 100px;
+      }
+    }
+
+    .job-title{
+      margin-bottom: 1rem;
+    }
+
+    li{
+      margin-bottom: .5rem;
+      // list-style: none;
+    }
+  }
+
+}
+
+
+
+// Desktop
+@include md {
+
+}
