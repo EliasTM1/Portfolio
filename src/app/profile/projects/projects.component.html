@@ -12,16 +12,19 @@
     </div>
 
     <div class="projects">
-      <div class="filter-pills">
-        <div class="pill">Somelang</div>
-        <div class="pill">Somelang</div>
-        <div class="pill">Somelang</div>
-        <div class="pill">Somelang</div>
-        <div class="pill">Somelang</div>
-        <div class="pill">Somelang</div>
-        <div class="pill">Somelang</div>
+      <div class="filter-pills" >
+          <div class="pill" *ngFor="let category of categories">
+            <span>
+              {{category.name}}
+              <span class="project-quantity">
+                ({{category.qty}})
+              </span>
+            </span>
+          </div>
+
       </div>
     </div>
+
 
     <div class="cards-grid">
       <app-project-card></app-project-card>

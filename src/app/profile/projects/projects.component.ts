@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Categories, filterCategories } from './constants';
 
 @Component({
   selector: 'app-projects',
@@ -7,7 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProjectsComponent implements OnInit {
 
+
+
   constructor() { }
+
+  public categories : Categories[] = filterCategories;
 
   ngOnInit(): void {
   }
