@@ -1,3 +1,10 @@
 $header-serif : 'EB Garamond', serif;
 $body-sans-serif: 'Questrial', sans-serif;
 $secondary-sans-serif: 'Source Sans Pro', sans-serif;
+
+@mixin section-title {
+      text-align: center;
+      font-family: $header-serif;
+      font-size: 3rem;
+      margin: 2rem auto;
+}

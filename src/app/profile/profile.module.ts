@@ -12,6 +12,7 @@ import { FooterComponent } from './footer/footer.component';
 import { ProfileComponent } from './profile.component';
 import { FormsModule } from '@angular/forms';
 import { ProjectCardComponent } from './project-card/project-card.component';
+import { RouterModule } from '@angular/router';
 
 
 
@@ -31,7 +32,21 @@ import { ProjectCardComponent } from './project-card/project-card.component';
   ],
   imports: [
     CommonModule,
-    FormsModule
+    FormsModule,
+    RouterModule
+  ],
+  exports: [
+    HeaderComponent,
+    IntroComponent,
+    AboutComponent,
+    ExperienceComponent,
+    ProjectsComponent,
+    SkillsComponent,
+    ReferenceComponent,
+    ContactComponent,
+    FooterComponent,
+    ProfileComponent,
+    ProjectCardComponent
   ]
 })
 export class ProfileModule { }

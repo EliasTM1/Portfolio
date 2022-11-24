@@ -5,15 +5,11 @@
 
   .title-container{
     .section-title{
-      text-align: center;
-      font-family: $header-serif;
-      font-size: 3rem;
-      margin: 2rem auto;
+      @include section-title;
     }
 
     .section-description{
       text-align: center;
-
     }
   }
 

@@ -6,7 +6,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ProfileComponent } from './profile/profile.component';
 import { ProfileModule } from './profile/profile.module';
-import { BurgerDirective } from './direct/burger.directive';
+import { HomeComponent } from './pages/home/home.component';
+import { ResumeComponent } from './pages/resume/resume.component';
+import { ContactComponent } from './pages/contact/contact.component';
 
 const routes: Routes = [
   {
@@ -18,7 +20,9 @@ const routes: Routes = [
 @NgModule({
   declarations: [
     AppComponent,
-    BurgerDirective
+    HomeComponent,
+    ResumeComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
