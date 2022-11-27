@@ -1,0 +1,72 @@
+@import '/src/styles/_abstracts-dir';
+
+// Mobile
+
+.footer-container{
+  background-color: black;
+  color: $silver;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+   .branding {
+    margin-bottom: 1rem;
+   }
+
+  .foot-section{
+    margin: auto 1rem;
+
+
+    .section-title {
+      font-weight: bolder !important;
+      .branding {
+        color: red;
+      }
+    }
+
+    ul{
+      list-style: none;
+      padding: 0;
+      margin: .5rem 0 1rem 0;
+    }
+
+    li{
+      font-size: .9rem;
+      cursor: pointer;
+    }
+
+    hr {
+      color: white;
+      border: 1px solid white;
+      max-width: 30%;
+      margin: .5rem 0 .2rem 0;
+    }
+
+    .social {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      margin: 1rem 0;
+
+      .logo {
+        margin: auto 1rem;
+        width: 30px;
+
+      }
+    }
+  }
+
+
+}
+
+// Destok
+@include md {
+
+  .footer-container{
+    margin-top: 10rem;
+    display: flex;
+    flex-direction: row;
+
+  }
+}
