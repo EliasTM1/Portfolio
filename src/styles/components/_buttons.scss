@@ -1,4 +1,5 @@
 @mixin clear-button {
+  cursor: pointer;
   color: black;
   background-color: white;
   padding: .5rem 1rem;
@@ -7,7 +8,7 @@
 }
 
 @mixin black-button {
-  @include clear-button();
+  @include clear-button;
   background-color: black;
   color: white;
 }
