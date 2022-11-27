@@ -1,0 +1,82 @@
+@import '/src/styles/_abstracts-dir';
+
+// Mobile
+
+.title-container{
+  width: 100%;
+  text-align: center;
+}
+
+.section-header {
+  @include section-title;
+}
+
+.section-description{
+  padding-inline: 2rem;
+  margin-bottom: 3rem;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.image-container{
+  img{
+    width: 100%;
+  }
+}
+
+.form-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  // background-color: black;
+
+  form{
+    // color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+
+    label{
+      font-size: 1rem;
+    }
+
+    label{
+      padding-bottom: 1rem;
+      letter-spacing: .2rem;
+    }
+
+    input {
+      border: 0;
+      border-bottom: 1px $black solid;
+      margin-bottom: 1rem;
+
+      &:focus{
+        outline: none;
+        box-shadow: none !important;
+      }
+    }
+
+    textarea {
+      padding: .5rem 1rem;
+      height: 5rem;
+    }
+  }
+}
+// Destok
+@include md {
+
+  .image-container{
+    width: 50%;
+  }
+
+  .contact-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+}

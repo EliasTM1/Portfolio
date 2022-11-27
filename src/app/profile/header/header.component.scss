@@ -1,5 +1,11 @@
 @import '/src/styles/_abstracts-dir';
 // Mobile
+header {
+  position: fixed;
+  width: 100%;
+}
+
+
 nav {
   box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.15);
   background-color: white;
@@ -69,6 +75,8 @@ nav {
 
     .logos {
       width: 4%;
+      position: absolute;
+      z-index: 100;
     }
 
     .nav-container {
