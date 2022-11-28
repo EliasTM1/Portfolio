@@ -3,6 +3,7 @@
 header {
   position: fixed;
   width: 100%;
+  z-index: 1;
 }
 
 
@@ -27,12 +28,14 @@ nav {
     display: flex;
     flex-direction: column;
     background-color: white;
+    height: 100%;
   }
 
   li {
     cursor: pointer;
     list-style: none;
     padding: 15px;
+    margin: auto .5rem;
     border-top: 1px solid black;
     text-align: center;
 
@@ -76,7 +79,7 @@ nav {
     .logos {
       width: 4%;
       position: absolute;
-      z-index: 100;
+      z-index: 1;
     }
 
     .nav-container {
@@ -95,7 +98,7 @@ nav {
 
     li {
       border: none;
-      padding: 12px;
+      // padding: 12px;
       &:last-child{
         border-bottom: 0;
       }

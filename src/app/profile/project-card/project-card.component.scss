@@ -15,8 +15,20 @@
       text-align: center;
     }
 
+    .icons-container {
+      ul{
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-left: 0;
+        margin: auto 2rem;
+      }
+    }
+
     .card-desctription {
       padding: .5rem;
+      margin-bottom: 0;
       text-align: center;
     }
   }
@@ -24,8 +36,8 @@
   .btn-container {
     display: flex;
     justify-content: center;
+    padding: 1rem;
     button{
-      padding: .4rem .6rem;
       margin: .5rem .5rem;
     }
   }

@@ -12,6 +12,7 @@
     margin: 3rem auto;
     img{
       max-width: 100%;
+
     }
   }
 
@@ -44,29 +45,33 @@
   }
 
   //  Desktop
-  @include md {
+  @include lg {
     .intro-container{
       display: flex;
       flex-direction: row;
-      justify-content: center;
+      justify-content: space-around;
       align-items: center;
+      margin: auto 1rem;
     }
 
     .image-container {
       display: flex;
       justify-content: center;
-      margin: 4rem auto;
-      max-width: 50%;
-      // img{
-      //   max-width: 70%;
-      // }
+      margin: 1rem auto;
+      max-width: 40%;
+      flex-grow: 1;
+      img{
+        max-width: 70%;
+      }
     }
 
     .greet-container {
       display: flex;
       flex-direction: column;
       justify-content: space-around;
-      width: 40%;
+      width: 30%;
+      flex-grow: 1;
+      margin: auto 10rem;
       .dev-name{
 
       }

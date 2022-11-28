@@ -29,7 +29,8 @@ const routes: Routes = [
     AppRoutingModule,
     ProfileModule,
     RouterModule.forRoot(routes, {
-      initialNavigation: 'enabledNonBlocking'
+      initialNavigation: 'enabledNonBlocking',
+      scrollPositionRestoration: 'enabled'
   }),
   ],
   providers: [],

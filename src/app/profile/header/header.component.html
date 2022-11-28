@@ -1,7 +1,7 @@
 <header>
   <nav>
     <div class="logos">E T M</div>
-    <div [ngClass]="collapse === true ? 'nav-container' : 'nav-container-active'">
+    <div [ngClass]="collapseMenu === true ? 'nav-container' : 'nav-container-active'">
       <ul (click)="toggleCollapse()">
         <li routerLink="home" >Work</li>
         <li routerLink="resume" >Resume</li>
@@ -10,7 +10,7 @@
       </ul>
     </div>
   <div class="burger-container" (click)="toggleCollapse()">
-    <button class="hamburger hamburger--emphatic burger" [ngClass]="collapse === false ? 'is-active' : '' " type="button">
+    <button class="hamburger hamburger--emphatic burger" [ngClass]="collapseMenu === true ? '' : 'is-active' " type="button">
       <span class="hamburger-box">
         <span class="hamburger-inner"></span>
       </span>

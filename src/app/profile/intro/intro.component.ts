@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-intro',
@@ -9,7 +9,12 @@ export class IntroComponent implements OnInit {
 
   constructor() { }
 
+
   ngOnInit(): void {
+  }
+
+  scrollTo() {
+
   }
 
 }

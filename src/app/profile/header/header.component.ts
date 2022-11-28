@@ -11,7 +11,7 @@ export class HeaderComponent implements OnInit {
 
   public getScreenWidth: any;
   public getScreenHeight: any;
-  public collapse: boolean = false;
+  public collapseMenu: boolean = false;
   public responsiveBrk : number = 768;
 
   ngOnInit(): void {
@@ -19,8 +19,13 @@ export class HeaderComponent implements OnInit {
   }
 
   toggleCollapse(): void {
-    this.collapse = !this.collapse;
-    console.log(this.collapse);
+
+    if (this.getScreenWidth >= this.responsiveBrk)
+      return;
+
+
+    this.collapseMenu = !this.collapseMenu;
+    console.log(this.collapseMenu);
   }
 
   @HostListener('window:resize', ['$event'])
@@ -28,11 +33,11 @@ export class HeaderComponent implements OnInit {
     this.getScreenWidth = window.innerWidth;
     this.getScreenHeight = window.innerHeight;
 
-    if (this.getScreenWidth >= 768) {
+    if (this.getScreenWidth >= this.responsiveBrk) {
       //  TODO : READ Sass variable to prevent magic numbers
-      this.collapse = false;
+      this.collapseMenu = false;
       return;
     }
-    this.collapse = true;
+    this.collapseMenu = true;
   }
 }
