@@ -9,18 +9,24 @@
   }
 
   .image-container {
-    margin: 3rem auto;
-    img{
-      max-width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
 
+    img{
+      width: 100%;
     }
+
+    @media (max-width: 990px) {
+      img{
+        max-width: 50%;
+      }
+    }
+
   }
 
   .greet-container {
     margin: auto 1rem;
-    .dev-name{
-
-    }
     .dev-sub-header{
       background-color: black;
       color: white;

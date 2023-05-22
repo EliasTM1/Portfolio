@@ -1,13 +1,17 @@
-@import '/src/styles/_abstracts-dir';
+@import "/src/styles/_abstracts-dir";
+@import "/src/styles/_components-dir";
 // Mobile
-.section-header{
-  .section-title{
+.section-header {
+  .section-title {
     @include section-title;
   }
 
   .section-description {
     text-align: center;
     width: 90%;
+    @include lg {
+      width: 60%;
+    }
     margin: auto auto 2rem auto;
   }
 
@@ -18,55 +22,51 @@
     width: 100%;
   }
 
-  .title-deco{
-    @include dark-header
-    // text-align: justify;
-    // background-color: $black;
-    // color: white;
-    // text-align: center;
-    // font-size: 1.5rem;
-    // width: 15rem;
-    // padding: auto 2rem;
-    // padding-top: .2rem;
-    // letter-spacing: .1rem;
+  .title-deco {
+    @include dark-header // text-align: justify;
+      // background-color: $black;
+      // color: white;
+      // text-align: center;
+      // font-size: 1.5rem;
+      // width: 15rem;
+      // padding: auto 2rem;
+      // padding-top: .2rem;
+      // letter-spacing: .1rem;
+;
   }
 
-  .sub-header{
+  .sub-header {
     transform: skew(20deg);
   }
 
-  .experience-sub{
+  .experience-sub {
     border: 2px ridge $silver;
     padding: 1rem;
     width: 90%;
+    @include sm {
+      width: 70%;
+    }
     margin-top: 3rem;
     margin-bottom: 3rem;
-    .company-name{
+
+    .company-name {
       font-size: 1.3rem;
-      letter-spacing: .1rem;
+      letter-spacing: 0.1rem;
     }
-    .date-loaction{
+    .date-loaction {
       // margin-bottom: 1rem;
-      div{
+      div {
         width: 100px;
       }
     }
 
-    .job-title{
+    .job-title {
       margin-bottom: 1rem;
     }
 
-    li{
-      margin-bottom: .5rem;
+    li {
+      margin-bottom: 0.5rem;
       // list-style: none;
     }
   }
-
-}
-
-
-
-// Desktop
-@include md {
-
 }
