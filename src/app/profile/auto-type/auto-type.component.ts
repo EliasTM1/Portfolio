@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-
+// TODO: Implement Runes to split emjis without breaking them while erasing or typing
 @Component({
   selector: 'app-auto-type',
   templateUrl: './auto-type.component.html',
