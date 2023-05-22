@@ -3,9 +3,9 @@
     <div class="logos">E T M</div>
     <div [ngClass]="collapseMenu === true ? 'nav-container' : 'nav-container-active'">
       <ul (click)="toggleCollapse()">
-        <li routerLink="home" >Work</li>
-        <li routerLink="resume" >Resume</li>
-        <li routerLink="contact" >Contact</li>
+        <li routerLinkActive="active" routerLink="home" >Work</li>
+        <li routerLinkActive="active" routerLink="resume" >Resume</li>
+        <li routerLinkActive="active" routerLink="contact" >Contact</li>
         <!-- <li>EN | ES</li> -->
       </ul>
     </div>

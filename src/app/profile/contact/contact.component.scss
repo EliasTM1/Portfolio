@@ -25,6 +25,7 @@
 }
 
 .image-container{
+  background-color: black;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -38,13 +39,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: auto;
-  // width: 60%;
+  // margin: auto;
   margin-top: 3rem;
+  width: 100%;
   // background-color: black;
 
   form{
     // color: white;
+    width: 80%;
     display: flex;
     flex-direction: column;
     padding: 1rem;
@@ -84,6 +86,15 @@
     }
   }
 }
+
+// Tablet
+@include md {
+  .form-container {
+    margin: auto;
+    // width: 100% !important;
+  }
+}
+
 // Destok
 @include lg {
 
@@ -103,10 +114,10 @@
 
   .form-container {
     margin: auto;
-    // width: 60%;
-    // form {
-    //   width: 120%;
-    // }
+    width: 50%;
+    form {
+      width: 50%;
+    }
   }
 
 }

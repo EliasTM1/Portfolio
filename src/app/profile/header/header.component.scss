@@ -45,6 +45,11 @@ nav {
     &:hover {
       background-color: $clear-gray ;
     }
+
+  }
+
+  .active {
+    text-decoration: underline;
   }
 
   .language {
