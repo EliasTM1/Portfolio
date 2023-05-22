@@ -25,6 +25,9 @@
 }
 
 .image-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   img{
     width: 100%;
     filter: invert(1);
@@ -36,6 +39,7 @@
   align-items: center;
   justify-content: center;
   margin: auto;
+  // width: 60%;
   margin-top: 3rem;
   // background-color: black;
 
@@ -99,6 +103,10 @@
 
   .form-container {
     margin: auto;
+    // width: 60%;
+    // form {
+    //   width: 120%;
+    // }
   }
 
 }

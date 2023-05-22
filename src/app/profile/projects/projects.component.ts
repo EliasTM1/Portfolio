@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { Categories, filterCategories } from './constants';
-import { HttpClient } from '@angular/common/http';
 import { currentProjects, Project } from './projects';
 
 

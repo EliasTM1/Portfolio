@@ -6,6 +6,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: #F8F3F0;
+    width: 100%;
   }
 
   .image-container {
@@ -17,9 +19,10 @@
       width: 100%;
     }
 
-    @media (max-width: 990px) {
+    @include sm {
       img{
-        max-width: 50%;
+        width: 70%;
+        // margin-bottom: 5rem;
       }
     }
 
@@ -31,9 +34,6 @@
       background-color: black;
       color: white;
       padding: .2rem .4rem;
-    }
-    .quick-bio{
-      text-align: center;
     }
   }
 
@@ -57,7 +57,7 @@
       flex-direction: row;
       justify-content: space-around;
       align-items: center;
-      margin: auto 1rem;
+      // margin: auto 1rem;
     }
 
     .image-container {

@@ -13,7 +13,7 @@ import { ProfileComponent } from './profile.component';
 import { FormsModule } from '@angular/forms';
 import { ProjectCardComponent } from './project-card/project-card.component';
 import { RouterModule } from '@angular/router';
-import { HttpClientModule } from '@angular/common/http';
+import { AutoTypeComponent } from './auto-type/auto-type.component';
 
 
 
@@ -29,13 +29,13 @@ import { HttpClientModule } from '@angular/common/http';
     ContactComponent,
     FooterComponent,
     ProfileComponent,
-    ProjectCardComponent
+    ProjectCardComponent,
+    AutoTypeComponent
   ],
   imports: [
     CommonModule,
     FormsModule,
     RouterModule,
-    HttpClientModule
   ],
   exports: [
     HeaderComponent,
@@ -48,7 +48,8 @@ import { HttpClientModule } from '@angular/common/http';
     ContactComponent,
     FooterComponent,
     ProfileComponent,
-    ProjectCardComponent
+    ProjectCardComponent,
+    AutoTypeComponent
   ]
 })
 export class ProfileModule { }
