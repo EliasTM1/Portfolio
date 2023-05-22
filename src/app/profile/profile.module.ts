@@ -13,6 +13,7 @@ import { ProfileComponent } from './profile.component';
 import { FormsModule } from '@angular/forms';
 import { ProjectCardComponent } from './project-card/project-card.component';
 import { RouterModule } from '@angular/router';
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -33,7 +34,8 @@ import { RouterModule } from '@angular/router';
   imports: [
     CommonModule,
     FormsModule,
-    RouterModule
+    RouterModule,
+    HttpClientModule
   ],
   exports: [
     HeaderComponent,

@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Categories, filterCategories } from './constants';
+import { HttpClient } from '@angular/common/http';
+import { currentProjects, Project } from './projects';
+
 
 @Component({
   selector: 'app-projects',
@@ -8,13 +11,11 @@ import { Categories, filterCategories } from './constants';
 })
 export class ProjectsComponent implements OnInit {
 
-
-
-  constructor() { }
-
   public categories : Categories[] = filterCategories;
+  projects: Project[] = currentProjects;
 
   ngOnInit(): void {
+
   }
 
 }

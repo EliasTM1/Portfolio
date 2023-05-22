@@ -12,7 +12,8 @@ export class ProjectCardComponent implements OnInit {
   @Input() title!: string;
   @Input() technologies!: string[];
   @Input() description!: string;
-  @Input() link!: string;
+  @Input() repoLink!: string;
+  @Input() demoLink!: string;
   @Input() image!: string;
 
 

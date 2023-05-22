@@ -5,7 +5,7 @@
     alt="Card image cap"
   />
   <div class="card-content">
-    <h3 class="card-header">Title</h3>
+    <h3 class="card-header">{{title}}</h3>
     <div class="icons-container">
       <ul>
         <li><i class="devicon-html5-plain colored"></i></li>
@@ -18,12 +18,11 @@
       </ul>
     </div>
     <p class="card-desctription">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum molestiae
-      tempore sint, esse molestias eos!
+      {{description}}
     </p>
     <div class="btn-container">
-      <button class="clear-button">Preview</button>
-      <button class="dark-button">Github Repo</button>
+      <button class="clear-button"><a href={{demoLink}}>Preview</a></button>
+      <button class="dark-button"><a href={{repoLink}}>Github Repo</a></button>
     </div>
   </div>
 </div>
