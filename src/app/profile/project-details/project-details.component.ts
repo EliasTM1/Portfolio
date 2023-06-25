@@ -10,7 +10,6 @@ import { currentProjects, Project } from '../../profile/projects/projects';
 export class ProjectDetailsComponent implements OnInit {
   urlProjectName: string = '';
   currentProject?: Project;
-
   featureListOne : string[] = []
   featureListTwo : string[] = []
 
