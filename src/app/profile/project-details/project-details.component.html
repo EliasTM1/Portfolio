@@ -4,24 +4,23 @@
     src="../../../assets/images/projects/stocks/tickers.jpg"
   />
   <div class="project-overview">
-    <h2>Project Name</h2>
+    <h2>{{currentProject.title}}</h2>
     <hr class="style-eight">
     <p>
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto
-      reprehenderit nisi consequuntur nemo. Distinctio ipsam provident a ex omnis
-      culpa iste? Deserunt eos commodi eveniet eligendi. A modi libero quasi hic
-      nulla dolor porro labore iste sequi tempora, in repellat quisquam mollitia
-      fuga fugiat accusantium doloremque, molestiae dolore sed! Facilis!
+      {{currentProject.details.description}}
     </p>
   </div>
   <div class="project-info">
     <div class="project-features">
       <h3>Features</h3>
       <ul>
-        <li>Feature 1</li>
+        <!-- <li>Feature 1</li>
         <li>Feature 2</li>
         <li>Feature 3</li>
-        <li>Feature 4</li>
+        <li>Feature 4</li> -->
+        <div *ngFor="let feature of featureListOne">
+          <li>{{feature}}</li>
+        </div>
       </ul>
     </div>
     <div class="project-media">
@@ -42,21 +41,16 @@
     <h2>Project Name</h2>
     <hr class="style-eight">
     <p>
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto
-      reprehenderit nisi consequuntur nemo. Distinctio ipsam provident a ex omnis
-      culpa iste? Deserunt eos commodi eveniet eligendi. A modi libero quasi hic
-      nulla dolor porro labore iste sequi tempora, in repellat quisquam mollitia
-      fuga fugiat accusantium doloremque, molestiae dolore sed! Facilis!
+      {{currentProject.details.descriptionSub}}
     </p>
   </div>
   <div class="project-info">
     <div class="project-features">
       <h3>Features</h3>
       <ul>
-        <li>Feature 1</li>
-        <li>Feature 2</li>
-        <li>Feature 3</li>
-        <li>Feature 4</li>
+        <div *ngFor="let feature of featureListOne">
+          <li>{{feature}}</li>
+        </div>
       </ul>
     </div>
     <div class="project-media">
@@ -71,6 +65,8 @@
   </div>
   <div class="repo-container">
     <h3>Please take a look to the repo</h3>
-    <button>GitHub repo.</button>
+    <button>
+      <a href={{currentProject.repo}}>GitHub repo.</a>
+      </button>
   </div>
 </section>

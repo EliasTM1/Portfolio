@@ -3,16 +3,7 @@ export interface Categories {
   qty: number;
 }
 
-export interface Project {
-  title: string;
-  description: string;
-  previewLink: string;
-  gitRepo: string;
-  icons : string;
-  category: availableTech;
-}
-
-type availableTech = "angular" | "vanillaDev" | "node" | "mean"
+// type availableTech = "angular" | "vanillaDev" | "node" | "mean"
 
 export const filterCategories : Categories[] = [
   {
@@ -34,16 +25,5 @@ export const filterCategories : Categories[] = [
   {
     name: "Node",
     qty: 2
-  },
-]
-
-export const projects : Project[] = [
-  {
-    title: "Title",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum molestiae tempore sint, esse molestias eos!",
-    previewLink: "https://www.google.com/",
-    gitRepo: "https://github.com/EliasTM1",
-    icons : "",
-    category: "angular"
   },
 ]
