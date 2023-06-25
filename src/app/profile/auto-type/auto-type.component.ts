@@ -24,15 +24,18 @@ export class AutoTypeComponent implements OnInit {
   }
 
   typeWord() {
-    if (!this.isErasing && this.charIndex <= this.words[this.wordIndex].length) {
-      this.currentWord += this.words[this.wordIndex].charAt(this.charIndex) || '';
+    let wordArray = Array.from(this.words[this.wordIndex]);
+    if (!this.isErasing && this.charIndex <= wordArray.length) {
+      this.currentWord += wordArray[this.charIndex] || '';
       this.charIndex++;
       setTimeout(() => this.typeWord(), this.typingDelay);
-    } else if (!this.isErasing && this.charIndex >= this.words[this.wordIndex].length) {
+    } else if (!this.isErasing && this.charIndex >= wordArray.length) {
       this.isErasing = true;
       setTimeout(() => this.typeWord(), this.nextWordDelay);
     } else if (this.isErasing && this.charIndex > 0) {
-      this.currentWord = this.currentWord.slice(0, -1);
+      // slice does not handle unicode correctly
+      // we should convert currentWord to an array, slice it and then join back to string
+      this.currentWord = Array.from(this.currentWord).slice(0, -1).join('');
       this.charIndex--;
       setTimeout(() => this.typeWord(), this.eraseDelay);
     } else {
@@ -45,5 +48,6 @@ export class AutoTypeComponent implements OnInit {
       setTimeout(() => this.typeWord(), this.typingDelay);
     }
   }
+
 
 }

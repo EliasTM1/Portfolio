@@ -14,6 +14,7 @@ import { FormsModule } from '@angular/forms';
 import { ProjectCardComponent } from './project-card/project-card.component';
 import { RouterModule } from '@angular/router';
 import { AutoTypeComponent } from './auto-type/auto-type.component';
+import { ProjectDetailsComponent } from './project-details/project-details.component';
 
 
 
@@ -30,7 +31,8 @@ import { AutoTypeComponent } from './auto-type/auto-type.component';
     FooterComponent,
     ProfileComponent,
     ProjectCardComponent,
-    AutoTypeComponent
+    AutoTypeComponent,
+    ProjectDetailsComponent
   ],
   imports: [
     CommonModule,
@@ -49,7 +51,8 @@ import { AutoTypeComponent } from './auto-type/auto-type.component';
     FooterComponent,
     ProfileComponent,
     ProjectCardComponent,
-    AutoTypeComponent
+    AutoTypeComponent,
+    ProjectDetailsComponent
   ]
 })
 export class ProfileModule { }

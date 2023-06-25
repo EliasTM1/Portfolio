@@ -11,7 +11,7 @@ export const currentProjects = [
     "projectTitle": "Stock Market Dashboard",
     "projectDescription": "Allows you to search for a stock and see its current price and historical data.",
     "technologiesUsed": ["Angular", "Tailwind", "AWS"],
-    "projectRepo": "http://example.com/project1",
+    "projectRepo": "https://github.com/EliasTM1/ng-Dashboard",
     "projectDemo" : "http://example.com/project1/demo"
   },
   {
@@ -38,6 +38,13 @@ export const currentProjects = [
   {
     "projectTitle": "Green Blog",
     "projectDescription": "Share experiences on the growth of plants and vegetables.",
+    "technologiesUsed": ["HTML", "CSS", "JavaScript"],
+    "projectRepo": "http://example.com/project1",
+    "projectDemo" : "http://example.com/project1/demo"
+  },
+  {
+    "projectTitle": "React E-commerce",
+    "projectDescription": "Allows you to search for products and add them to your cart and checkout.",
     "technologiesUsed": ["HTML", "CSS", "JavaScript"],
     "projectRepo": "http://example.com/project1",
     "projectDemo" : "http://example.com/project1/demo"

@@ -8,7 +8,6 @@ import { Component, Input, OnInit } from '@angular/core';
 export class ProjectCardComponent implements OnInit {
 
   constructor() { }
-
   @Input() title!: string;
   @Input() technologies!: string[];
   @Input() description!: string;

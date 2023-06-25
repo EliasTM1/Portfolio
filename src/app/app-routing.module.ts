@@ -3,11 +3,16 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './pages/home/home.component';
 import { ResumeComponent } from './pages/resume/resume.component';
 import { ContactComponent } from './profile/contact/contact.component';
+import { DetailsComponent } from './pages/details/details.component';
 
 const routes: Routes = [
   {
     path: "home",
-    component: HomeComponent
+    component: HomeComponent,
+  },
+  {
+    path: "details/:encodedTitle",
+    component: DetailsComponent,
   },
   {
     path: "resume",
