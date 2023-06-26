@@ -1,64 +1,61 @@
 export interface Skill {
   technology: string;
-  percentage: string;
-  color : string;
   icon: string;
 }
 
 export const skillSet : Skill[] = [
   {
     technology: "HTML",
-    percentage: "60%",
-    color: "",
-    icon: '<i class="devicon-html5-plain colored"></i>',
+    icon: '../../../assets/images/techIcons/html-5-svgrepo-com (1).svg',
   },
   {
-    technology: "Sass",
-    percentage: "60%",
-    color: "",
-    icon: '<i class="devicon-sass-original colored"></i>',
+    technology: "CSS",
+    icon: '../../../assets/images/techIcons/css-3-svgrepo-com (1).svg',
   },
   {
     technology: "JS",
-    percentage: "60%",
-    color: "",
-    icon: '<i class="devicon-javascript-plain colored"></i>',
-
+    icon: '../../../assets/images/techIcons/js-svgrepo-com (1).svg',
   },
   {
-    technology: "Angular",
-    percentage: "60%",
-    color: "",
-    icon: '<i class="devicon-angularjs-plain colored"></i>',
+    technology: "Angular Sass",
+    icon: '../../../assets/images/techIcons/ng-component-scss-svgrepo-com (1).svg',
   },
   {
-    technology: "Node",
-    percentage: "60%",
-    color: "",
-    icon: '<i class="devicon-nodejs-plain colored"></i>',
+    technology: "ngRx",
+    icon: '../../../assets/images/techIcons/ngrx.svg',
   },
   {
-    technology: "Express",
-    percentage: "60%",
-    color: "",
-    icon: '<i class="devicon-express-original colored"></i>',
+    technology: "React",
+    icon: '../../../assets/images/techIcons/react-javascript-js-framework-facebook-svgrepo-com (1).svg',
+  },
+  {
+    technology: "Redux",
+    icon: '../../../assets/images/techIcons/redux.svg',
+  },
+  {
+    technology: "NodeJS",
+    icon: '../../../assets/images/techIcons/node-js-svgrepo-com (1).svg',
+  },
+  {
+    technology: "ExpressJS",
+    icon: '../../../assets/images/techIcons/express-svgrepo-com (1).svg',
   },
   {
     technology: "MongoDB",
-    percentage: "60%",
-    color: "",
-    icon: '<i class="devicon-mongodb-plain colored"></i>',
+    icon: '../../../assets/images/techIcons/mongo-svgrepo-com (1).svg',
   },
   {
     technology: "Git",
-    percentage: "60%",
-    color: "",
-    icon: '<i class="devicon-git-plain colored"></i>',
+    icon: '../../../assets/images/techIcons/git-svgrepo-com (1).svg',
   },
   {
     technology: "Github",
-    percentage: "60%",
-    color: "",
-    icon: '<i class="devicon-github-original colored"></i>',
+    icon: '../../../assets/images/techIcons/github-142-svgrepo-com (1).svg',
   },
+  {
+    technology: "Github",
+    icon: '../../../assets/images/techIcons/aws-svgrepo-com (1).svg',
+  },
+
+
 ]

@@ -3,7 +3,7 @@ export interface Categories {
   qty: number;
 }
 
-// type availableTech = "angular" | "vanillaDev" | "node" | "mean"
+type availableTech = "angular" | "vanillaDev" | "node" | "mean"
 
 export const filterCategories : Categories[] = [
   {
