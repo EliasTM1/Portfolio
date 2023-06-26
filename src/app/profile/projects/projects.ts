@@ -1,5 +1,5 @@
 export interface Project {
-  details?: ProjectDetails;
+  details: ProjectDetails;
   demo: string;
   description: string;
   repo: string;
