@@ -15,6 +15,7 @@ import { ProjectCardComponent } from './project-card/project-card.component';
 import { RouterModule } from '@angular/router';
 import { AutoTypeComponent } from './auto-type/auto-type.component';
 import { ProjectDetailsComponent } from './project-details/project-details.component';
+import { GalleryComponent } from './gallery/gallery.component';
 
 
 
@@ -32,7 +33,8 @@ import { ProjectDetailsComponent } from './project-details/project-details.compo
     ProfileComponent,
     ProjectCardComponent,
     AutoTypeComponent,
-    ProjectDetailsComponent
+    ProjectDetailsComponent,
+    GalleryComponent
   ],
   imports: [
     CommonModule,
@@ -52,7 +54,8 @@ import { ProjectDetailsComponent } from './project-details/project-details.compo
     ProfileComponent,
     ProjectCardComponent,
     AutoTypeComponent,
-    ProjectDetailsComponent
+    ProjectDetailsComponent,
+    GalleryComponent
   ]
 })
 export class ProfileModule { }

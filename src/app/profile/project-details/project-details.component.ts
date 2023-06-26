@@ -9,7 +9,22 @@ import { currentProjects, Project } from '../../profile/projects/projects';
 })
 export class ProjectDetailsComponent implements OnInit {
   urlProjectName: string = '';
-  currentProject?: Project;
+  currentProject: Project = {
+    demo: '',
+    description: '',
+    repo: '',
+    title: '',
+    technologiesUsed:[],
+    details : {
+      bannerImg: '',
+      subBannerImg: '',
+      description: '',
+      descriptionSub: '',
+      features: [],
+      projectMedia: [],
+      technologiesUsed: [],
+    }
+  };
   featureListOne : string[] = []
   featureListTwo : string[] = []
 
