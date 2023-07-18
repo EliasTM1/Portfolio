@@ -20,13 +20,19 @@
       </ul>
     </div>
     <div class="project-media">
-      <h3>Screenshots</h3>
+      <h3> *</h3>
+        <ul>
+          <div *ngFor="let feature of featureListOne">
+            <li>{{feature}}</li>
+          </div>
+        </ul>
     </div>
   </div>
-  <img
+  <app-img-slider></app-img-slider>
+  <!-- <img
     class="banner-img"
     src="{{currentProject.details.subBannerImg}}"
-  />
+  /> -->
   <div class="project-overview">
     <h2>Project Name</h2>
     <hr class="style-eight">
@@ -35,22 +41,22 @@
     </p>
   </div>
   <div class="project-info">
-    <div class="project-features">
+    <!-- <div class="project-features">
       <h3>Features</h3>
       <ul>
         <div *ngFor="let feature of featureListOne">
           <li>{{feature}}</li>
         </div>
       </ul>
-    </div>
-    <div class="project-media">
+    </div> -->
+    <!-- <div class="project-media">
       <h3>Screenshots</h3>
       <ul>
       </ul>
-    </div>
+    </div> -->
   </div>
   <div class="repo-container">
-    <h3>Please take a look to the repo</h3>
+    <h3>Please take a look to the</h3>
     <button>
       <a href={{currentProject.repo}}>GitHub repo.</a>
       </button>

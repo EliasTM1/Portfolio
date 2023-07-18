@@ -16,6 +16,7 @@ import { RouterModule } from '@angular/router';
 import { AutoTypeComponent } from './auto-type/auto-type.component';
 import { ProjectDetailsComponent } from './project-details/project-details.component';
 import { GalleryComponent } from './gallery/gallery.component';
+import { ImgSliderComponent } from './img-slider/img-slider.component';
 
 
 
@@ -34,7 +35,8 @@ import { GalleryComponent } from './gallery/gallery.component';
     ProjectCardComponent,
     AutoTypeComponent,
     ProjectDetailsComponent,
-    GalleryComponent
+    GalleryComponent,
+    ImgSliderComponent
   ],
   imports: [
     CommonModule,
@@ -55,7 +57,8 @@ import { GalleryComponent } from './gallery/gallery.component';
     ProjectCardComponent,
     AutoTypeComponent,
     ProjectDetailsComponent,
-    GalleryComponent
+    GalleryComponent,
+    ImgSliderComponent
   ]
 })
 export class ProfileModule { }
