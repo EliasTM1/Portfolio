@@ -45,7 +45,6 @@ export class ProjectDetailsComponent implements OnInit {
     const project = currentProjects.find(
       (project: Project) => project.title === this.urlProjectName
     );
-    console.log(project, "project")
     if (project !== undefined) {
       this.currentProject = project
       this.featureListOne = project!.details!.features.slice(0, project!.details!.features.length / 2);
