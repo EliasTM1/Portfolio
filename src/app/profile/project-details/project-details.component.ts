@@ -23,7 +23,8 @@ export class ProjectDetailsComponent implements OnInit {
       features: [],
       projectMedia: [],
       technologiesUsed: [],
-    }
+    },
+    sliderInfo: []
   };
   featureListOne : string[] = []
   featureListTwo : string[] = []

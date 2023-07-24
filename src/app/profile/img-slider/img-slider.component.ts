@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { slides, Slide } from './imgSliderMock';
+import { Component, Input, OnInit } from '@angular/core';
+import { Slide } from './imgSliderMock';
 
 @Component({
   selector: 'app-img-slider',
@@ -7,11 +7,13 @@ import { slides, Slide } from './imgSliderMock';
   styleUrls: ['./img-slider.component.scss'],
 })
 export class ImgSliderComponent {
-  slides: Slide[] = slides;
+  @Input() projectData : any;
   activeSlideIndex: number = 0;
   activeSlide: any[] = [];
+  slides: Slide[] = []
 
   ngOnInit() {
+    this.slides = this.projectData;
     this.slides[this.activeSlideIndex].active = false;
     this.activeSlide = [this.slides[this.activeSlideIndex]];
   }

@@ -3,15 +3,19 @@
 .card-container{
   width: 18rem;
   margin: 1rem;
-  border: 1px $black solid;
-  border-radius: 5px;
+  // border: 1px $black solid;
+  border: .5vmin solid #05060f;
+  box-shadow: .4rem .4rem #05060f;
+  // border-radius: 5px;
+  border-radius: 1rem;
   .card-img {
-    border-radius: 4px 4px 0px 0px;
+    border-radius: .9rem .9rem 0px 0px;
     cursor: pointer;
   }
 
   .card-content {
-    // background-color: white;
+    background-color: white;
+    border-radius: 0px 0px .9rem .9rem;
     .card-header {
       padding: .5rem;
       text-align: center;

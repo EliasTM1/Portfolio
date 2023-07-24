@@ -1,80 +1,76 @@
-@import '/src/styles/_abstracts-dir';
+@import "/src/styles/_abstracts-dir";
 
-// Mobile
-.projects-container {
+section {
+  // background-color:  #f5f2eb;
+  // Mobile
+  .projects-container {
+    .title-container {
+      .section-title {
+        @include section-title;
+      }
 
-  .title-container{
-    .section-title{
-      @include section-title;
+      .section-description {
+        text-align: center;
+      }
     }
 
-    .section-description{
-      text-align: center;
-    }
-  }
-
-  .projects{
-    margin: 2rem 1rem;
-    .filter-pills{
-      display: flex;
-      justify-content: center;
-      flex-direction: row;
-      flex-wrap: wrap;
-      .pill{
-        background-color: $clear-gray;
-        border-radius: 15px;
-        width: fit-content;
-        padding: .4rem .8rem .4rem 1rem;
-        margin: .5rem .5rem;
-        color: $dark-gray;
-        cursor: pointer;
-        &:hover{
+    .projects {
+      margin: 2rem 1rem;
+      .filter-pills {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        .pill {
+          background-color: $clear-gray;
+          border-radius: 15px;
+          width: fit-content;
+          padding: 0.4rem 0.8rem 0.4rem 1rem;
+          margin: 0.5rem 0.5rem;
+          color: $dark-gray;
           cursor: pointer;
-          background-color: $silver;
-          color: white;
+          &:hover {
+            cursor: pointer;
+            background-color: $silver;
+            color: white;
+          }
+        }
+
+        .project-quantity {
+          margin: auto 0.3rem;
         }
       }
-
-      .project-quantity{
-        margin: auto .3rem;
-      }
     }
-  }
 
-  .cards-grid{
-    display: flex;
-    justify-content: space-around;
-    align-content: space-around;
-    flex-wrap: wrap;
-    margin-bottom: 5rem;
-  }
-
-}
-
-// Desktop
-@include md {
-  .projects-container {
-    .title-container{
+    .cards-grid {
       display: flex;
-      flex-direction: column;
       justify-content: space-around;
-      .section-title{
-        text-align: center;
-        font-family: $header-serif;
-        font-size: 3rem;
-        margin: .5rem auto;
-      }
+      align-content: space-around;
+      flex-wrap: wrap;
+      // margin-bottom: 5rem;
+    }
+  }
 
+  // Desktop
+  @include md {
+    .projects-container {
+      .title-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        .section-title {
+          text-align: center;
+          font-family: $header-serif;
+          font-size: 3rem;
+          margin: 0.5rem auto;
+        }
 
-
-
-      .section-description{
-        text-align: center;
-        width: 50%;
-        margin: auto;
-
+        .section-description {
+          text-align: center;
+          width: 50%;
+          margin: auto;
+        }
       }
     }
-
   }
 }

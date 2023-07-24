@@ -31,7 +31,7 @@
     </div>
   </div>
   <!-- TODO: This is the real place of img slider -->
-  <app-img-slider></app-img-slider>
+  <app-img-slider [projectData]="currentProject.sliderInfo"></app-img-slider>
   <div class="project-overview">
     <h2>Project Name</h2>
     <hr class="style-eight">
@@ -48,11 +48,6 @@
         </div>
       </ul>
     </div>
-    <!-- <div class="project-media">
-      <h3>Screenshots</h3>
-      <ul>
-      </ul>
-    </div> -->
   </div>
   <div class="repo-container">
     <h3>Please take a look to the</h3>

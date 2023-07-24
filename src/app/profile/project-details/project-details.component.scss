@@ -1,11 +1,12 @@
 section {
+  background-color:  #f5f2eb;
   .banner-container {
     display: flex;
     justify-content: center;
     .banner-img {
       height: auto;
       // height: 350px;
-      width: 90%;
+      width: 100%;
       background-size: cover;
       background-position: center center;
     }
