@@ -1,34 +1,24 @@
 <div class="container">
   <div class="wrapper">
-      <div class="slide-img">
-    <!-- <div *ngFor="let slide of slides; let i = index" class="slide" [ngClass]="{ 'active': slide.active }"> -->
-    <div *ngFor="let slide of someExample; let i = index" class="slide">
-    <!-- <div *ngFor="let slide of slides" class="slide"> -->
-      <div class="slide-img">
-        <!-- <img src="{{slide.src}}" *ngIf="slide.active == true"> -->
-        <img src="{{slide.src}}" >
-        <!-- <img [src]="slide.imgSrc" alt="Slide {{ i }}" > -->
-      </div>
-      <div class="slide-content">
-        <!-- <h2 [ngClass]="{ 'active': slide.active }">Title{{ slide.title }}</h2> -->
-        <!-- <p [ngClass]="{ 'active': slide.active }">description{{ slide.description }}</p> -->
-        <h2>Title{{ slide.title }}</h2>
-        <p>description{{ slide.description }}</p>
-        <!-- <a href="#" [ngClass]="{ 'active': slide.active }">Read More</a> -->
-        <a>Read More</a>
-        <div class="button">
-          <!-- <div class="btn button-left" > -->
-            <div class="arrow" (click)="onClickButton(false)"></div>
-            <i class="fa fa-long-arrow-left" aria-hidden="true"></i>
-          <!-- </div> -->
-          <!-- <div class="btn button-right"> -->
-            <div class="arrow" (click)="onClickButton(true)"></div>
-            <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-          <!-- </div> -->
+    <div class="slide-img">
+      <div *ngFor="let slide of activeSlide; let i = index" class="slide">
+        <div class="slide-img" [ngClass]="{ 'active': slide.active }">
+          <img  src="{{ slide.src }}" />
         </div>
-        <!-- <button (click)="onClickButton(false)">Click me here false</button>
-        <button (click)="onClickButton(true)">Click me here true</button> -->
+        <div class="slide-content">
+          <h2 [ngClass]="{ 'active': slide.active }">Title{{ slide.title }}</h2>
+          <p  [ngClass]="{ 'active': slide.active }">description{{ slide.description }}</p>
+          <a [ngClass]="{ 'active': slide.active }">Read More</a>
+          <div class="button">
+            <div class="someContainer">
+              <button class="button-left" (click)="onClickButton(false)">👈</button>
+              <button class="button-right" (click)="onClickButton(true)">👉</button>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </div>
+
+

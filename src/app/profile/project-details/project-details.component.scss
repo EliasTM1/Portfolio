@@ -1,7 +1,14 @@
 section {
-  .banner-img {
-    height: 350px;
-    width: 100%;
+  .banner-container {
+    display: flex;
+    justify-content: center;
+    .banner-img {
+      height: auto;
+      // height: 350px;
+      width: 90%;
+      background-size: cover;
+      background-position: center center;
+    }
   }
 
   .project-overview {
@@ -53,6 +60,21 @@ section {
       color: white;
       padding: 0.3rem 0.8rem;
       width: 300px;
+    }
+  }
+}
+
+//  * For tablet
+@media only screen and (max-width: 767px) {
+
+}
+//  * For mobile
+@media only screen and (max-width: 767px) {
+  section {
+    .banner-container {
+      .banner-img {
+        width: 100%;
+      }
     }
   }
 }

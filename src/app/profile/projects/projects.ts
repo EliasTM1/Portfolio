@@ -54,7 +54,7 @@ export const currentProjects : Project[] = [
     repo: 'http://example.com/project1',
     demo: 'http://example.com/project1/demo',
     details: {
-      bannerImg: '../../../assets/images/projects/authentication/safe.jpg',
+      bannerImg: '../../../assets/images/cool.jpg',
       subBannerImg: '../../../assets/images/projects/authentication/whoAreYou.jpg',
       description: 'The Authentication Application is a robust, secure platform built on Angular, offering an advanced user management system that harnesses the capabilities of Amazon Web Services (AWS) Cognito. This comprehensive solution enables seamless user sign-up, sign-in, and authentication processes. Built with TypeScript and styled with SCSS, the application offers a combination of powerful functionality and a modern, user-friendly interface, catering to a variety of use cases.',
       descriptionSub: 'The application is backed by AWS Lambda, which ensures efficient serverless compute execution, resulting in scalable, responsive operations. It also leverages AWS Secrets Manager for handling sensitive information, further enhancing the security aspect. This multi-faceted approach towards security makes it an ideal choice for projects demanding high levels of data integrity. Overall, the Authentication Application showcases a harmonious blend of advanced security, user-friendly design, and optimal performance, setting a high standard for user management systems.',

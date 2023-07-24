@@ -4,15 +4,15 @@
     height: 30em;
     width: 100%;
     padding: 0;
-    margin: auto;
+    margin: 2rem auto;
     display: block;
     position: relative;
     top: 50%;
     // transform: translateY(-50%);
     left: 0;
     right: 0;
-    // box-shadow: 5px 5px 35px 0px #cbcbcb;
-    border: 1px solid black;
+    box-shadow: 5px 5px 35px 0px #cbcbcb;
+    // border: 3px solid black;
     overflow: hidden;
 
     .wrapper {
@@ -36,6 +36,25 @@
           position: relative;
           height: 100%;
 
+          .fadeOut {
+            opacity: 1;
+            transition: opacity 1s;
+          }
+
+          .fadeOut.active {
+            opacity: 0;
+          }
+
+          .fadeIn {
+            opacity: 0;
+            transition: opacity 1s;
+          }
+
+          .fadeIn.active {
+            opacity: 1;
+          }
+
+
           &:before {
             content: "";
             height: 0%;
@@ -51,7 +70,7 @@
 
           &.active {
             &:before {
-              content: "";
+              // content: "";
               height: 100%;
               background-color: #fff;
               width: 100%;
@@ -97,7 +116,7 @@
             }
             &.active {
               &:before {
-                content: "";
+                // content: "";
                 height: 100%;
               }
             }
@@ -120,7 +139,7 @@
             }
             &.active {
               &:before {
-                content: "";
+                // content: "";
                 height: 100%;
               }
             }
@@ -150,7 +169,7 @@
             }
             &.active {
               &:before {
-                content: "";
+                // content: "";
                 height: 100%;
               }
             }
@@ -164,6 +183,17 @@
             margin-top: 4em;
             transition: all 0.4s;
 
+            .someContainer {
+              display: flex;
+              justify-content: end;
+
+              button {
+                background-color: transparent;
+                border: none;
+                padding: 1rem;
+              }
+            }
+
             .inactive {
               i {
                 color: red;
@@ -176,12 +206,12 @@
 
             .button-left {
               float: left;
-              width: 50%;
+              // width: 50%;
             }
 
             .button-right {
               float: right;
-              width: 50%;
+              // width: 50%;
               text-align: right;
             }
 
