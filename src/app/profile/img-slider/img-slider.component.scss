@@ -1,4 +1,5 @@
   .container {
+    border: 1px solid black;
     height: 30em;
     width: 100%;
     padding: 0;
@@ -8,9 +9,10 @@
     top: 50%;
     left: 0;
     right: 0;
-    box-shadow: 5px 5px 35px 0px #cbcbcb;
-    // border: 3px solid black;
     overflow: hidden;
+    border: 0.5vmin solid #05060f;
+    box-shadow: 0.4rem 0.4rem #05060f;
+    border-radius: 1rem;
 
     .wrapper {
       height: 100%;
@@ -20,8 +22,7 @@
       .slide {
         height: 100%;
         width: 100%;
-        background-color: #fff;
-        // background-color:  #f5f2eb;
+        background-color:  #f5f2eb;
         position: absolute;
         top: 0;
         bottom: 0;

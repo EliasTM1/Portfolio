@@ -1,9 +1,10 @@
-<div class="card-container">
+<div class="card-container"
+routerLink="/details/{{title}}"
+>
   <img
     class="card-img"
     src="../../../assets/images/image_processing20200102-25922-12jakz1.png"
     alt="Card image cap"
-    routerLink="/details/{{title}}"
   />
   <div class="card-content">
     <h3 class="card-header">{{title}}</h3>
@@ -23,7 +24,7 @@
     </p>
     <div class="btn-container">
       <button class="clear-button"><a href={{demoLink}}>Preview</a></button>
-      <button class="dark-button"><a href={{repoLink}}>Github Repo</a></button>
+      <button class="dark-button"><a routerLink="/details/{{title}}">Github Repo</a></button>
     </div>
   </div>
 </div>
