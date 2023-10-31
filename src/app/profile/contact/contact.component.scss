@@ -3,7 +3,7 @@
 
 // Mobile
 
-.title-container{
+.title-container {
   width: 100%;
   text-align: center;
 }
@@ -12,7 +12,7 @@
   @include section-title;
 }
 
-.section-description{
+.section-description {
   padding-inline: 2rem;
   margin-bottom: 3rem;
 }
@@ -20,16 +20,17 @@
 .contact-container {
   display: flex;
   flex-direction: column;
-  margin-top: 4rem;
-  // border: 1px solid $black;
+  // margin-top: 2rem;
+  // border-top: 1px solid $black;
+  padding-top: 2rem;
 }
 
-.image-container{
-  background-color: black;
+.image-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  img{
+
+  img {
     width: 100%;
     // filter: invert(1);
   }
@@ -44,18 +45,18 @@
   width: 100%;
   // background-color: black;
 
-  form{
+  form {
     // color: white;
     width: 80%;
     display: flex;
     flex-direction: column;
     padding: 1rem;
 
-    label{
+    label {
       font-size: 1rem;
     }
 
-    label{
+    label {
       padding-bottom: 1rem;
       letter-spacing: .2rem;
     }
@@ -67,7 +68,7 @@
       border-bottom: 1px $black solid;
       margin-bottom: 1rem;
 
-      &:focus{
+      &:focus {
         outline: none;
         box-shadow: none !important;
       }
@@ -98,11 +99,11 @@
 // Destok
 @include lg {
 
-  .section-description{
+  .section-description {
     margin: auto 18.75rem;
   }
 
-  .image-container{
+  .image-container {
     width: 50%;
   }
 
@@ -115,8 +116,9 @@
   .form-container {
     margin: auto;
     width: 50%;
+
     form {
-      width: 50%;
+      width: 90%;
     }
   }
 

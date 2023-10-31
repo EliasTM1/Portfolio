@@ -1,102 +1,99 @@
 @import '/src/styles/_abstracts-dir';
 @import '/src/styles/_components-dir';
+
 //  Mobile
-  .intro-container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #F8F3F0;
-    border-bottom: 2px solid black;
+.intro-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #F8F3F0;
+  border-bottom: 2px solid black;
+  width: 100%;
+  height: fit-content;
+  padding-block: 2rem;
+}
+
+.image-container {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+
+  img {
     width: 100%;
   }
 
+  @include sm {
+    img {
+      width: 70%;
+      // margin-bottom: 5rem;
+    }
+  }
+
+}
+
+.greet-container {
+  margin: auto 1rem;
+
+  .dev-sub-header {
+    background-color: black;
+    color: white;
+    padding: .2rem .4rem;
+  }
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 2rem 0;
+
+  button {
+    @include clear-button;
+  }
+
+  .dark-button {
+    @include black-button;
+  }
+}
+
+//  Desktop
+@include lg {
+  .intro-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    // margin: auto 1rem;
+  }
+
   .image-container {
-    margin: auto;
     display: flex;
     justify-content: center;
+    margin: 1rem auto;
+    max-width: 40%;
+    flex-grow: 1;
 
-    img{
-      width: 100%;
+    img {
+      max-width: 70%;
     }
-
-    @include sm {
-      img{
-        width: 70%;
-        // margin-bottom: 5rem;
-      }
-    }
-
   }
 
   .greet-container {
-    margin: auto 1rem;
-    .dev-sub-header{
-      background-color: black;
-      color: white;
-      padding: .2rem .4rem;
-    }
-  }
-
-  .button-container{
     display: flex;
-    justify-content: space-evenly;
-    margin: 2rem 0;
-    button{
-      @include clear-button;
-    }
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30%;
+    flex-grow: 1;
+    margin: auto 10rem;
 
-    .dark-button{
-      @include black-button;
-    }
+    .dev-name {}
+
+    .dev-sub-header {}
+
+    .quick-bio {}
   }
 
-  //  Desktop
-  @include lg {
-    .intro-container{
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-      align-items: center;
-      // margin: auto 1rem;
-    }
+  .button-container {}
 
-    .image-container {
-      display: flex;
-      justify-content: center;
-      margin: 1rem auto;
-      max-width: 40%;
-      flex-grow: 1;
-      img{
-        max-width: 70%;
-      }
-    }
-
-    .greet-container {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-      width: 30%;
-      flex-grow: 1;
-      margin: auto 10rem;
-      .dev-name{
-
-      }
-      .dev-sub-header{
-
-      }
-      .quick-bio{
-
-      }
-    }
-
-    .button-container{
-
-    }
-
-      .dark-button{
-
-    }
-  }
-
-
+  .dark-button {}
+}

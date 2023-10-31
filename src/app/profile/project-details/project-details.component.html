@@ -1,9 +1,10 @@
 <section>
   <div class="banner-container">
-    <img
+    <img class="banner-img" />
+    <!-- <img
       class="banner-img"
       src="{{currentProject.details.bannerImg}}"
-    />
+    /> -->
   </div>
   <div class="project-overview">
     <h2>{{currentProject.title}}</h2>
@@ -23,11 +24,11 @@
     </div>
     <div class="project-media">
       <h3> *</h3>
-        <ul>
-          <div *ngFor="let feature of featureListOne">
-            <li>{{feature}}</li>
-          </div>
-        </ul>
+      <ul>
+        <div *ngFor="let feature of featureListOne">
+          <li>{{feature}}</li>
+        </div>
+      </ul>
     </div>
   </div>
   <!-- TODO: This is the real place of img slider -->
@@ -53,6 +54,6 @@
     <h3>Please take a look to the</h3>
     <button>
       <a href={{currentProject.repo}}>GitHub repo.</a>
-      </button>
+    </button>
   </div>
 </section>

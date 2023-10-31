@@ -1,4 +1,5 @@
 @import '/src/styles/_abstracts-dir';
+
 // Mobile
 header {
   position: fixed;
@@ -17,7 +18,8 @@ nav {
     padding: 15px;
 
   }
-  .logos + div {
+
+  .logos+div {
     width: 100%;
   }
 
@@ -35,13 +37,14 @@ nav {
     cursor: pointer;
     list-style: none;
     padding: 15px;
-    margin: auto .5rem;
+    // margin: auto .5rem;
     border-top: 1px solid black;
     text-align: center;
 
-    &:last-child{
+    &:last-child {
       border-bottom: 1px solid black;
     }
+
     &:hover {
       background-color: $clear-gray ;
     }
@@ -49,28 +52,28 @@ nav {
   }
 
   .active {
-    text-decoration: underline;
+    background-color: $clear-gray ;
   }
 
   .language {
     padding: 15px;
   }
 
-  .burger-container{
+  .burger-container {
     position: absolute;
     right: 0;
     top: 0;
   }
 
   .nav-container {
-    transform: scale(1,0);
+    transform: scale(1, 0);
     transform-origin: top;
     transition: transform 300ms ease-in;
 
   }
 
   .nav-container-active {
-    transform: scale(1,1);
+    transform: scale(1, 1);
     transform-origin: top;
     transition: transform 300ms ease-in;
   }
@@ -93,7 +96,7 @@ nav {
       justify-content: center;
     }
 
-    .language{
+    .language {
       width: 6rem;
     }
 
@@ -103,13 +106,14 @@ nav {
 
     li {
       border: none;
+
       // padding: 12px;
-      &:last-child{
+      &:last-child {
         border-bottom: 0;
       }
     }
 
-    ul{
+    ul {
       width: 100%;
       display: flex;
       flex-direction: row;

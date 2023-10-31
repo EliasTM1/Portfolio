@@ -20,7 +20,7 @@ export interface ProjectDetails {
 
 export const currentProjects: Project[] = [
   {
-    title: 'Stock Market Dashboard',
+    title: 'Stock Dashboard',
     description:
       'Allows you to search for a stock and see its current price and historical data.',
     technologiesUsed: ['Angular', 'Tailwind', 'AWS'],
@@ -60,7 +60,7 @@ export const currentProjects: Project[] = [
       bannerImg: '../../../assets/images/projects/stocks/tickers.jpg',
       subBannerImg: '../../../assets/images/projects//stocks/laptop.jpg',
       description:
-        'This application is an all-encompassing Stock Market Dashboard designed to provide users with in-depth historical data across various timeframes. The aim is to offer a thorough analysis of market trends, enabling users to make informed, data-driven investment decisions. The dashboard is not only limited to historical data, but it also presents comprehensive financial information along with a dedicated section for technical analysis. This dual approach, integrating both fundamental and technical aspects, provides users with a holistic understanding of their chosen stocks and creates a comprehensive environment for assessing potential investments.',
+        'This application is an all-encompassing Stock Market Dashboard designed to provide users with in-depth historical data across various timeframes. The aim is to offer a thorough analysis of market trends, enabling users to make informed, data-driven investment decisions. The dashboard is not only limited to historical data, but it also presents comprehensive financial information along with a dedicated section for technical analysis.',
 
       features: [
         'Historical Data Visualization: Detailed historical data across various timeframes for data-driven decision making.',

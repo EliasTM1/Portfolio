@@ -1,18 +1,22 @@
 <div class="container">
   <div class="wrapper">
     <div class="slide-img">
-      <div *ngFor="let slide of activeSlide; let i = index" class="slide">
-        <div class="slide-img" [ngClass]="{ 'active': slide.active }">
-          <img  src="{{ slide.src }}" />
+      <div *ngFor="let slide of activeSlide; let i = index"
+        class="slide">
+        <div class="slide-img"
+          [ngClass]="{ 'active': slide.active }">
+          <img src="{{ slide.src }}" />
         </div>
         <div class="slide-content">
           <h2 [ngClass]="{ 'active': slide.active }">Title{{ slide.title }}</h2>
-          <p  [ngClass]="{ 'active': slide.active }">description{{ slide.description }}</p>
+          <p [ngClass]="{ 'active': slide.active }">description{{ slide.description }}</p>
           <a [ngClass]="{ 'active': slide.active }">Read More</a>
           <div class="button">
             <div class="someContainer">
-              <button class="button-left" (click)="onClickButton(false)">👈</button>
-              <button class="button-right" (click)="onClickButton(true)">👉</button>
+              <button class="underline-text button-left"
+                (click)="onClickButton(false)">previous</button>
+              <button class="underline-text button-right"
+                (click)="onClickButton(true)">next</button>
             </div>
           </div>
         </div>
@@ -20,5 +24,3 @@
     </div>
   </div>
 </div>
-
-

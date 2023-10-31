@@ -1,14 +1,14 @@
   .container {
     border: 1px solid black;
-    height: 30em;
-    width: 100%;
+    height: 450px;
+    // width: 100%;
     padding: 0;
     margin: 2rem auto;
     display: block;
     position: relative;
-    top: 50%;
-    left: 0;
-    right: 0;
+    // top: 50%;
+    // left: 0;
+    // right: 0;
     overflow: hidden;
     border: 0.5vmin solid #05060f;
     box-shadow: 0.4rem 0.4rem #05060f;
@@ -22,7 +22,7 @@
       .slide {
         height: 100%;
         width: 100%;
-        background-color:  #f5f2eb;
+        background-color: #f5f2eb;
         position: absolute;
         top: 0;
         bottom: 0;
@@ -101,6 +101,7 @@
 
           h2 {
             position: relative;
+
             &:before {
               content: "";
               height: 0%;
@@ -113,6 +114,7 @@
               z-index: 5;
               transition: all 0.3s linear;
             }
+
             &.active {
               &:before {
                 // content: "";
@@ -123,6 +125,7 @@
 
           p {
             position: relative;
+
             &:before {
               content: "";
               height: 0%;
@@ -136,6 +139,7 @@
               transition: all 0.3s linear;
               transition-delay: 0.3s;
             }
+
             &.active {
               &:before {
                 // content: "";
@@ -166,6 +170,7 @@
               transition: all 0.2s ease-in-out;
               transition-delay: 0.5s;
             }
+
             &.active {
               &:before {
                 // content: "";
@@ -184,12 +189,12 @@
 
             .someContainer {
               display: flex;
-              justify-content: end;
+              justify-content: space-evenly;
 
               button {
                 background-color: transparent;
                 border: none;
-                padding: 1rem;
+                // padding: .2rem .2rem;
               }
             }
 
@@ -197,11 +202,38 @@
               i {
                 color: red;
               }
+
               i:hover {
                 color: red;
               }
             }
 
+            .underline-text {
+              position: relative;
+              display: inline-block;
+              text-decoration: none;
+              color: #333;
+            }
+
+            .underline-text:hover {
+              color: #da566f;
+            }
+
+            .underline-text::before {
+              content: "";
+              position: absolute;
+              width: 0;
+              height: 2px;
+              background-color: #da566f;
+              bottom: 0;
+              left: 0;
+              transition: width 0.25s ease-in;
+            }
+
+            .underline-text:hover::before {
+              width: 100%;
+              color: #da566f;
+            }
 
             .button-left {
               float: left;
@@ -229,54 +261,57 @@
       }
     }
   }
-// }
 
-@media only screen and (max-width: 1024px) {
-  html, body {
-    .container {
-      width: 90%;
+  // }
+
+  @media only screen and (max-width: 1024px) {
+
+    html,
+    body {
+      .container {
+        width: 90%;
+      }
     }
   }
-}
 
-@media only screen and (max-width: 767px) {
-  html, body {
-    h2 {
-      font-size: 1.5em;
-    }
+  @media only screen and (max-width: 767px) {
 
-    .container {
-      width: 93%;
-      margin: 3% auto;
-      overflow: inherit;
-      height: 100%;
-      position: relative;
-      top: 0;
-      transform: inherit;
-      overflow: inherit;
+    html,
+    body {
+      h2 {
+        font-size: 1.5em;
+      }
 
-      .wrapper {
-        .slide {
-          .slide-img {
-            width: 100%;
-            height: 45%;
-          }
+      .container {
+        width: 93%;
+        margin: 3% auto;
+        overflow: inherit;
+        height: 100%;
+        position: relative;
+        top: 0;
+        transform: inherit;
+        overflow: inherit;
 
-          .slide-content {
-            width: 100%;
-            padding: 2em 2em;
-            background-color: #fff;
+        .wrapper {
+          .slide {
+            .slide-img {
+              width: 100%;
+              height: 45%;
+            }
 
-            .button {
-              margin-top: 2em;
+            .slide-content {
+              width: 100%;
+              padding: 2em 2em;
+              background-color: #fff;
+
+              .button {
+                margin-top: 2em;
+              }
             }
           }
         }
       }
     }
   }
-}
 
-@media only screen and (max-width: 420px) {
-
-}
+  @media only screen and (max-width: 420px) {}

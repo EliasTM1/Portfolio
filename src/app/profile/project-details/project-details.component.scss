@@ -1,8 +1,10 @@
 section {
-  background-color:  #f5f2eb;
+
+  // background-color:  #f5f2eb;
   .banner-container {
     display: flex;
     justify-content: center;
+
     .banner-img {
       height: auto;
       // height: 350px;
@@ -31,9 +33,11 @@ section {
   .project-info {
     display: flex;
     margin: 1.5rem 1rem;
+
     .project-features {
       width: 50%;
     }
+
     .project-media {
       width: 50%;
     }
@@ -47,14 +51,17 @@ section {
     display: flex;
     flex-direction: column;
     padding: 1rem;
+
     h3 {
       color: white;
     }
+
     button {
       a {
         color: white;
         text-decoration: none;
       }
+
       background-color: black;
       border-radius: 10px;
       border: 1px solid white;
@@ -62,15 +69,14 @@ section {
       padding: 0.3rem 0.8rem;
       width: 300px;
       border: 0.5vmin solid #fff;
-    box-shadow: 0.4rem 0.4rem #fff;
+      box-shadow: 0.4rem 0.4rem #fff;
     }
   }
 }
 
 //  * For tablet
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 767px) {}
 
-}
 //  * For mobile
 @media only screen and (max-width: 767px) {
   section {

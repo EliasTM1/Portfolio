@@ -1,9 +1,12 @@
 @import "/src/styles/_abstracts-dir";
 
 section {
+
   // background-color:  #f5f2eb;
   // Mobile
   .projects-container {
+    padding-bottom: 2rem;
+
     .title-container {
       .section-title {
         @include section-title;
@@ -16,11 +19,13 @@ section {
 
     .projects {
       margin: 2rem 1rem;
+
       .filter-pills {
         display: flex;
         justify-content: center;
         flex-direction: row;
         flex-wrap: wrap;
+
         .pill {
           background-color: $clear-gray;
           border-radius: 15px;
@@ -29,6 +34,7 @@ section {
           margin: 0.5rem 0.5rem;
           color: $dark-gray;
           cursor: pointer;
+
           &:hover {
             cursor: pointer;
             background-color: $silver;
@@ -42,7 +48,7 @@ section {
       }
     }
 
-    .cards-grid {
+    .cards-container {
       display: flex;
       justify-content: space-around;
       align-content: space-around;
@@ -58,6 +64,7 @@ section {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
+
         .section-title {
           text-align: center;
           font-family: $header-serif;
