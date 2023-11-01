@@ -2,13 +2,14 @@
     border: 1px solid black;
     height: 450px;
     padding: 0;
-    margin: 2rem auto;
+    margin: auto;
     display: block;
     position: relative;
     overflow: hidden;
     border: 0.5vmin solid #05060f;
     box-shadow: 0.4rem 0.4rem #05060f;
     border-radius: 1rem;
+    width: 60%;
 
     .wrapper {
       height: 100%;
@@ -16,9 +17,10 @@
       position: relative;
 
       .slide {
+        display: flex;
+        flex-direction: row;
         height: 100%;
         width: 100%;
-        background-color: #f5f2eb;
         position: absolute;
         top: 0;
         bottom: 0;
@@ -26,7 +28,7 @@
         right: 0;
 
         .slide-img {
-          width: 40%;
+          width: 75%;
           float: left;
           position: relative;
           height: 100%;
@@ -60,19 +62,22 @@
             height: 100%;
             width: 100%;
             object-fit: cover;
-            position: absolute;
+            background-size: cover;
+            background-position: center center;
+            // position: absolute;
             right: 0;
+            border-radius: .8rem 0 0 0;
             left: 0;
             margin: auto;
-            top: 0;
+            // top: 0;
             bottom: 0;
           }
         }
 
         .slide-content {
+          margin: 2rem;
           width: 60%;
           float: left;
-          padding: 10% 8% 0em 8%;
           position: relative;
 
           h2 {
@@ -165,6 +170,7 @@
               display: inline-block;
               text-decoration: none;
               color: #333;
+              background-color: white;
             }
 
             .underline-text:hover {
@@ -215,52 +221,71 @@
 
   @media only screen and (max-width: 1024px) {
 
-    html,
-    body {
-      .container {
-        width: 90%;
+    .container {
+      width: 90%;
+
+      .wrapper {
+        .slide {
+          display: flex;
+          flex-direction: row;
+
+          .slide-img {
+            width: 100%;
+            height: 45%;
+
+            img {
+              border-radius: .8rem .8rem 0 0;
+            }
+          }
+        }
+
+        .slide-content {
+          margin: 5rem;
+        }
       }
+
+      ;
     }
   }
 
+
   @media only screen and (max-width: 767px) {
 
-    html,
-    body {
-      h2 {
-        font-size: 1.5em;
-      }
+    .container {
+      width: 93%;
+      height: 550px;
+      margin: 3% auto;
+      overflow: inherit;
+      position: relative;
+      top: 0;
+      transform: inherit;
+      overflow: inherit;
 
-      .container {
-        width: 93%;
-        margin: 3% auto;
-        overflow: inherit;
-        height: 100%;
-        position: relative;
-        top: 0;
-        transform: inherit;
-        overflow: inherit;
+      .wrapper {
 
-        .wrapper {
-          .slide {
-            .slide-img {
-              width: 100%;
-              height: 45%;
+        .slide {
+          display: flex;
+          flex-direction: column;
+
+          .slide-img {
+            width: 100%;
+            height: 45%;
+
+            img {
+              border-radius: .8rem .8rem 0 0;
             }
+          }
 
-            .slide-content {
-              width: 100%;
-              padding: 2em 2em;
-              background-color: #fff;
+          .slide-content {
+            width: fit-content;
+            margin: 2em 2em;
+            background-color: #fff;
 
-              .button {
-                margin-top: 2em;
-              }
+            .button {
+              margin-top: 2em;
             }
           }
         }
       }
     }
   }
-
-  @media only screen and (max-width: 420px) {}

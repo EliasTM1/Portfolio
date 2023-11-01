@@ -3,6 +3,7 @@
 @import './__components-dir';
 @import './__vendor-dir';
 @import 'hamburgers/_sass/hamburgers/hamburgers.scss';
+
 /* Global */
 * {
   margin: 0;
@@ -10,34 +11,42 @@
   font-family: $body-sans-serif;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: $header-serif;
 }
 
-.clear-button{
+.clear-button {
   @include clear-button;
 }
 
-.dark-button{
+.dark-button {
   @include black-button;
 }
 
 hr.style-eight {
   margin: auto;
-    width: 30%;
-    overflow: visible; /* For IE */
-    padding: 0;
-    border: none;
-    border-top: medium double #333;
-    color: #333;
-    text-align: center;
+  width: 30%;
+  overflow: visible;
+  /* For IE */
+  padding: 0;
+  border: none;
+  border-top: medium double #333;
+  color: #333;
+  text-align: center;
+  height: 10px;
 }
+
 hr.style-eight:after {
-    content: "§";
-    display: inline-block;
-    position: relative;
-    top: -0.7em;
-    font-size: 1.5em;
-    padding: 0 0.25em;
-    background: white;
+  content: "§";
+  display: inline-block;
+  position: relative;
+  top: -0.7em;
+  font-size: 1.5em;
+  padding: 0 0.25em;
+  background: white;
 }
