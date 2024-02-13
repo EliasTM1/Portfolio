@@ -1,29 +1,21 @@
-export interface Categories {
-  name: string;
-  qty: number;
+export type Difficulty = {
+  difficulty: string;
+  projectId: number;
 }
 
-type availableTech = "angular" | "vanillaDev" | "node" | "mean"
+// type availableStack = "angular" | "vanillaDev" | "node" | "mean"
 
-export const filterCategories : Categories[] = [
+export const filterCategories : Difficulty[] = [
   {
-    name: "All",
-    qty: 2
+    difficulty: "Fundamental",
+    projectId: 2
   },
   {
-    name: "Angular",
-    qty: 2
+    difficulty: "Medium",
+    projectId: 3
   },
   {
-    name: "HTML CSS JS",
-    qty: 2
-  },
-  {
-    name: "MEAN",
-    qty: 2
-  },
-  {
-    name: "Node",
-    qty: 2
+    difficulty: "Complex",
+    projectId: 4
   },
 ]

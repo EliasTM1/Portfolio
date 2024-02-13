@@ -10,6 +10,8 @@ import { currentProjects, Project } from '../../profile/projects/projects';
 export class ProjectDetailsComponent implements OnInit {
   urlProjectName: string = '';
   currentProject: Project = {
+    projectId: 0,
+    difficulty: '',
     demo: '',
     description: '',
     repo: '',
@@ -22,7 +24,6 @@ export class ProjectDetailsComponent implements OnInit {
       descriptionSub: '',
       features: [],
       projectMedia: [],
-      technologiesUsed: [],
     },
     sliderInfo: []
   };

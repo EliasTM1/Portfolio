@@ -29,7 +29,8 @@ h6 {
 }
 
 hr.style-eight {
-  margin: auto;
+  // margin-bottom: "300px";
+  margin: 10px auto;
   width: 30%;
   overflow: visible;
   /* For IE */
@@ -44,6 +45,7 @@ hr.style-eight {
 hr.style-eight:after {
   content: "§";
   display: inline-block;
+  // margin-bottom: "100px";
   position: relative;
   top: -0.7em;
   font-size: 1.5em;

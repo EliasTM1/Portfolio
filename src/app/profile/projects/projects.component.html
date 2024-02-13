@@ -1,10 +1,8 @@
 <section id="projects">
-
   <div class="projects-container">
-
     <div class="title-container">
       <div class="section-title">Work</div>
-      <hr class="style-eight">
+      <hr class="style-eight" />
       <div class="section-description">
         Here are some of the apps I have built. Please take a look.
       </div>
@@ -13,28 +11,36 @@
     <div class="projects">
       <div class="filter-pills">
         <!-- TODO: Filter for cards, paginatation still pending -->
-        <!-- <div class="pill" *ngFor="let category of categories">
-            <span>
-              {{category.name}}
-              <span class="project-quantity">
-                ({{category.qty}})
-              </span>
-            </span>
-          </div> -->
-
+        <div
+          class="pill"
+          *ngIf="selectedCategory !== ''"
+          (click)="clearFilter()"
+        >
+          <span> All Projects </span>
+        </div>
+        <div
+          class="pill"
+          [ngClass]="
+            category.difficulty === selectedCategory ? 'active-pill' : ''
+          "
+          *ngFor="let category of categories"
+          (click)="filterByDifficulty(category.difficulty)"
+        >
+          <span>
+            {{ category.difficulty }}
+          </span>
+        </div>
       </div>
     </div>
 
-
     <div class="cards-container">
-      <app-project-card *ngFor="let project of projects"
+      <app-project-card
+        *ngFor="let project of displayedProjexts"
         [title]="project.title"
         [description]="project.description"
         [demoLink]="project.demo"
-        [repoLink]="project.repo"></app-project-card>
+        [repoLink]="project.repo"
+      ></app-project-card>
     </div>
-
-
   </div>
-
 </section>

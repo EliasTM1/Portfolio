@@ -1,4 +1,4 @@
-export interface Project {
+export type Project = {
   details: ProjectDetails;
   demo: string;
   description: string;
@@ -6,17 +6,18 @@ export interface Project {
   title: string;
   technologiesUsed: string[];
   sliderInfo: any[];
-}
+  projectId: number;
+  difficulty: string;
+};
 
-export interface ProjectDetails {
+export type ProjectDetails = {
   bannerImg: string;
   subBannerImg: string;
   description: string;
   descriptionSub: string;
   features: string[];
   projectMedia: string[];
-  technologiesUsed: string[];
-}
+};
 
 export const currentProjects: Project[] = [
   {
@@ -24,6 +25,8 @@ export const currentProjects: Project[] = [
     description:
       'Allows you to search for a stock and see its current price and historical data.',
     technologiesUsed: ['Angular', 'Tailwind', 'AWS'],
+    projectId: 5,
+    difficulty: 'Complex',
     repo: 'https://github.com/EliasTM1/ng-Dashboard',
     sliderInfo: [
       {
@@ -55,7 +58,7 @@ export const currentProjects: Project[] = [
         active: false,
       },
     ],
-    demo: 'http://example.com/project1/demo',
+    demo: 'https://ng-dashboard-kappa.vercel.app/dashboard/watchlist',
     details: {
       bannerImg: '../../../assets/images/projects/stocks/tickers.jpg',
       subBannerImg: '../../../assets/images/projects//stocks/laptop.jpg',
@@ -75,7 +78,6 @@ export const currentProjects: Project[] = [
       ],
       descriptionSub:
         'The architecture of the application underscores a strong commitment to performance and user experience. With the implementation of lazy loading, the application ensures optimal performance by loading components as needed, effectively separating the login modules from the main app modules. Furthermore, the application interfaces with multiple third-party APIs, including Finnhub and Polygon.io, ensuring the delivery of accurate and up-to-date market data. On the security front, the app integrates Amazon Web Services (AWS) Cognito for user management. This provides seamless user sign-up and sign-in services, along with secure user authentication. The result is a user-friendly, robust, and reliable tool, perfect for anyone looking to navigate the world of stock market investment with ease and confidence.',
-      technologiesUsed: [''],
       projectMedia: [''],
     },
   },
@@ -84,6 +86,8 @@ export const currentProjects: Project[] = [
     description:
       'Angular app that allows you to sign up, sign in, and sign out using AWS Cognito.',
     technologiesUsed: ['Angular', 'Bootstrap', 'JavaScript', 'AWS Cognito'],
+    projectId: 5,
+    difficulty: 'Complex',
     repo: 'http://example.com/project1',
     sliderInfo: [
       {
@@ -135,7 +139,6 @@ export const currentProjects: Project[] = [
         'SCSS Styling: Utilization of SCSS for advanced styling, variable use, and better organized CSS.',
         'User-Friendly Interface: The interface is intuitively designed for a seamless and user-friendly experience.',
       ],
-      technologiesUsed: [''],
       projectMedia: [''],
     },
   },
@@ -144,6 +147,8 @@ export const currentProjects: Project[] = [
     description:
       'Angular app that allows you to search for recipes and see their ingredients and instructions.',
     technologiesUsed: ['HTML', 'CSS', 'JavaScript'],
+    projectId: 5,
+    difficulty: 'Fundamental',
     repo: 'http://example.com/project1',
     sliderInfo: [
       {
@@ -192,15 +197,16 @@ export const currentProjects: Project[] = [
         'Recipe Rating and Reviews: Users can rate and review recipes, providing valuable feedback for others in the community.',
       ],
       descriptionSub: '',
-      technologiesUsed: [''],
       projectMedia: [''],
     },
   },
   {
-    title: 'Angular E-commerce',
+    title: 'Encriptator JS',
     description:
       'Angular app that allows you to search for products and add them to your cart and checkout.',
     technologiesUsed: ['HTML', 'CSS', 'JavaScript'],
+    projectId: 5,
+    difficulty: 'Complex',
     repo: 'http://example.com/project1',
     sliderInfo: [
       {
@@ -232,7 +238,7 @@ export const currentProjects: Project[] = [
         active: false,
       },
     ],
-    demo: 'http://example.com/project1/demo',
+    demo: 'https://one-encriptator.vercel.app/',
     details: {
       bannerImg: '../../../assets/images/projects/eCommerce/commerceStreet.jpg',
       subBannerImg: '../../../assets/images/projects/eCommerce/openSign.jpg',
@@ -241,7 +247,6 @@ export const currentProjects: Project[] = [
       descriptionSub:
         "Redux manages the application's global state, ensuring consistent user experiences and smooth data flow across components. The meticulous design covers all e-commerce functions, while React's component-based architecture promotes clean, reusable code. The application's predictability and maintenance are enhanced by Redux's state container, making this platform a paragon of efficient and user-centric eCommerce development.",
       features: [],
-      technologiesUsed: [''],
       projectMedia: [''],
     },
   },
@@ -250,6 +255,8 @@ export const currentProjects: Project[] = [
     description:
       'Allows you to search for products and add them to your cart and checkout.',
     technologiesUsed: ['HTML', 'CSS', 'JavaScript'],
+    projectId: 5,
+    difficulty: 'Medium',
     repo: 'http://example.com/project1',
     sliderInfo: [
       {
@@ -289,7 +296,6 @@ export const currentProjects: Project[] = [
       description: '',
       features: [],
       descriptionSub: '',
-      technologiesUsed: [''],
       projectMedia: [''],
     },
   },
