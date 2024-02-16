@@ -1,6 +1,6 @@
 <header>
   <nav>
-    <div class="logos">E T M</div>
+    <div class="logos" routerLink="/home">E T M</div>
     <div [ngClass]="collapseMenu === true ? 'nav-container' : 'nav-container-active'">
       <ul (click)="toggleCollapse()">
         <li routerLinkActive="active" routerLink="home" >Work</li>

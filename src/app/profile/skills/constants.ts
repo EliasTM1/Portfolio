@@ -5,6 +5,10 @@ export interface Skill {
 
 export const skillSet : Skill[] = [
   {
+    technology: "Chakra UI",
+    icon: '../../../assets/images/techIcons/chakraUI.svg',
+  },
+  {
     technology: "HTML",
     icon: '../../../assets/images/techIcons/html-5-svgrepo-com (1).svg',
   },
