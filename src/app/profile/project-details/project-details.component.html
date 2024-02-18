@@ -1,4 +1,4 @@
-<section>
+<section id="header-details">
   <div class="banner-container">
     <img class="banner-img" />
     <!-- <img
@@ -7,37 +7,39 @@
     /> -->
   </div>
   <div class="project-overview">
-    <h2>{{currentProject.title}}</h2>
-    <hr class="style-eight">
+    <h2>{{ currentProject.title }}</h2>
+    <hr class="style-eight" />
     <p>
-      {{currentProject.details.description}}
+      {{ currentProject.details.description }}
     </p>
   </div>
-  <div class="project-info">
+</section>
+<section>
+  <!-- <div class="project-info">
     <div class="project-features">
       <h3>Features</h3>
       <ul>
         <div *ngFor="let feature of featureListOne">
-          <li>{{feature}}</li>
+          <li>{{ feature }}</li>
         </div>
       </ul>
     </div>
     <div class="project-media">
-      <h3> *</h3>
+      <h3>*</h3>
       <ul>
         <div *ngFor="let feature of featureListOne">
-          <li>{{feature}}</li>
+          <li>{{ feature }}</li>
         </div>
       </ul>
     </div>
-  </div>
+  </div> -->
   <!-- TODO: This is the real place of img slider -->
   <app-img-slider [projectData]="currentProject.sliderInfo"></app-img-slider>
   <div class="project-overview">
     <h2>Project Name</h2>
-    <hr class="style-eight">
+    <hr class="style-eight" />
     <p>
-      {{currentProject.details.descriptionSub}}
+      {{ currentProject.details.descriptionSub }}
     </p>
   </div>
   <div class="project-info">
@@ -45,7 +47,7 @@
       <h3>Features</h3>
       <ul>
         <div *ngFor="let feature of featureListOne">
-          <li>{{feature}}</li>
+          <li>{{ feature }}</li>
         </div>
       </ul>
     </div>
@@ -53,7 +55,7 @@
   <div class="repo-container">
     <h3>Please check the repo:</h3>
     <button>
-      <a href={{currentProject.repo}}>GitHub repo.</a>
+      <a href="{{ currentProject.repo }}">GitHub repo.</a>
     </button>
   </div>
 </section>

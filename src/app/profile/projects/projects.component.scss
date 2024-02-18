@@ -12,6 +12,19 @@ section {
         padding-top: 2rem;
         @include section-title;
       }
+      .section-title::before {
+        content: "";
+        z-index: -1;
+        margin-top: 10px;
+        // right: -2px;
+        width: 110px;
+        transform: rotate(-5deg);
+        height: 50px;
+        background-color: rgba(0, 153, 255, 0.714);
+        position: absolute;
+        // padding-top: 2rem;
+        // @include section-title;
+      }
 
       .section-description {
         text-align: center;

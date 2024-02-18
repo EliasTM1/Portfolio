@@ -1,13 +1,18 @@
+#header-details {
+  background-color: #F8F3F0;
+  border-bottom: 2px solid black;
+  margin-bottom: 4rem;
+}
+
+
 section {
 
-  // background-color:  #f5f2eb;
   .banner-container {
     display: flex;
     justify-content: center;
 
     .banner-img {
       height: auto;
-      // height: 350px;
       width: 100%;
       background-size: cover;
       background-position: center center;
@@ -21,9 +26,9 @@ section {
     align-items: center;
 
     p {
+      width: 80%;
       text-align: center;
     }
-
   }
 
   .project-info {
@@ -72,7 +77,8 @@ section {
 }
 
 //  * For tablet
-@media only screen and (max-width: 767px) {}
+@media only screen and (max-width: 767px) {
+}
 
 //  * For mobile
 @media only screen and (max-width: 767px) {

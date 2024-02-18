@@ -35,6 +35,19 @@
 .greet-container {
   margin: auto 1rem;
 
+  .technologies {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    #chakraIcon {
+      width: 80px;
+    }
+    .techIcon {
+      width: 40px;
+    }
+
+  }
+
   .dev-sub-header {
     background-color: black;
     color: white;

@@ -1,4 +1,4 @@
-@import '/src/styles/_abstracts-dir';
+@import "/src/styles/_abstracts-dir";
 
 // Mobile
 header {
@@ -6,7 +6,6 @@ header {
   width: 100%;
   z-index: 1;
 }
-
 
 nav {
   box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.15);
@@ -16,10 +15,10 @@ nav {
   .logos {
     min-width: 70px;
     padding: 15px;
-
+    cursor: pointer;
   }
 
-  .logos+div {
+  .logos + div {
     width: 100%;
   }
 
@@ -46,13 +45,18 @@ nav {
     }
 
     &:hover {
-      background-color: $clear-gray ;
+      background-color: $clear-gray;
     }
+  }
 
+  #downloadCV {
+    text-decoration: underline;
+    // background-color: black;
+    // color: white;
   }
 
   .active {
-    background-color: $clear-gray ;
+    background-color: $clear-gray;
   }
 
   .language {
@@ -69,7 +73,6 @@ nav {
     transform: scale(1, 0);
     transform-origin: top;
     transition: transform 300ms ease-in;
-
   }
 
   .nav-container-active {
@@ -77,7 +80,6 @@ nav {
     transform-origin: top;
     transition: transform 300ms ease-in;
   }
-
 
   // Desktop
   @include md {
@@ -123,7 +125,6 @@ nav {
       background-color: white;
     }
   }
-
 }
 
 // box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.15);

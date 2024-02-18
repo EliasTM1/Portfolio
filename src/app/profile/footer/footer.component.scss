@@ -21,9 +21,9 @@
     .section-title {
       font-weight: bolder !important;
       margin-top: .5rem;
-      .branding {
-        color: red;
-      }
+      // .branding {
+      //   color: red;
+      // }
     }
 
     ul{
@@ -72,6 +72,7 @@
 @include lg {
 
   .footer-container{
+    // background-color: red;
     display: flex;
     flex-direction: row;
     .social {
