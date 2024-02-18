@@ -9,6 +9,7 @@ section {
 
     .title-container {
       .section-title {
+        padding-top: 2rem;
         @include section-title;
       }
 

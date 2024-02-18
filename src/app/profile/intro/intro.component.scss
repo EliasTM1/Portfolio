@@ -50,9 +50,19 @@
   button {
     @include clear-button;
   }
+  button:hover {
+    background-color: black;
+    color: white;
+  }
 
   .dark-button {
     @include black-button;
+  }
+
+  .dark-button:hover {
+    // @include black-button;
+    background-color: white;
+    color: black;
   }
 }
 
