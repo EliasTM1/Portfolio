@@ -15,13 +15,7 @@
   </div>
 </section>
 <section>
-  <!-- <div class="repo-container">
-    <h3>Please check the repo:</h3>
-    <button>
-      <a href="{{ currentProject.repo }}">GitHub repo.</a>
-    </button>
-  </div> -->
-  <!-- <div class="project-info">
+  <div class="project-info">
     <div class="project-features">
       <h3>Features</h3>
       <ul>
@@ -38,18 +32,11 @@
         </div>
       </ul>
     </div>
-  </div> -->
+  </div>
   <!-- TODO: This is the real place of img slider -->
   <app-img-slider [projectData]="currentProject.sliderInfo"></app-img-slider>
-  <div class="project-overview">
-    <h2>Project Name</h2>
-    <hr class="style-eight" />
-    <p>
-      {{ currentProject.details.descriptionSub }}
-    </p>
-  </div>
   <div class="project-info">
-    <div class="project-features">
+    <div class="project-conclusion">
       <h3>Features</h3>
       <ul>
         <div *ngFor="let feature of featureListOne">

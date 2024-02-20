@@ -13,6 +13,8 @@ export class HeaderComponent implements OnInit {
   public getScreenHeight: any;
   public collapseMenu: boolean = false;
   public responsiveBrk : number = 768;
+  public resumeUrl: string = '/assets/your-resume.pdf';
+
 
   ngOnInit(): void {
     this.onWindowResize();

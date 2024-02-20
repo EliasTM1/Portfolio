@@ -2,6 +2,9 @@
 @import '/src/styles/_components-dir';
 
 // Mobile
+#contact {
+  // background-color: #F8F3F0;
+}
 
 .title-container {
   width: 100%;
@@ -31,6 +34,8 @@
   // margin-top: 2rem;
   // border-top: 1px solid $black;
   padding-top: 2rem;
+
+
 }
 
 .image-container {
@@ -56,7 +61,7 @@
 
   form {
     // color: white;
-    width: 80%;
+    width: 70%;
     display: flex;
     flex-direction: column;
     padding: 1rem;
@@ -67,14 +72,17 @@
 
     label {
       padding-bottom: 1rem;
-      letter-spacing: .2rem;
+      // letter-spacing: .2rem;
     }
 
     input {
       outline: none;
-      letter-spacing: 3px;
+      // letter-spacing: 3px;
       border: 0;
-      border-bottom: 1px $black solid;
+      // border: 1px $black solid;
+      border: 1px gray solid;
+      padding: 8px;
+      border-radius: .5rem;
       margin-bottom: 1rem;
 
       &:focus {
@@ -84,8 +92,9 @@
     }
 
     textarea {
-      padding: .5rem 1rem;
+      padding: .5rem .5rem;
       height: 5rem;
+      border-radius: .5rem;
       resize: none;
     }
 
@@ -127,7 +136,7 @@
     width: 50%;
 
     form {
-      width: 90%;
+      width: 60%;
     }
   }
 

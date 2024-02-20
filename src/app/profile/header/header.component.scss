@@ -47,6 +47,9 @@ nav {
     &:hover {
       background-color: $clear-gray;
     }
+    a {
+      color: black;
+    }
   }
 
   #downloadCV {
@@ -57,6 +60,7 @@ nav {
 
   .active {
     background-color: $clear-gray;
+    border-bottom: 1px solid black;
   }
 
   .language {

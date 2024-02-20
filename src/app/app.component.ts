@@ -12,7 +12,8 @@ export class AppComponent implements OnInit {
 
   ngOnInit(): void {
     init({startEvent: 'DOMContentLoaded'});
-    setTimeout(() => this.showLoader = false, 2000)
+    // setTimeout(() => this.showLoader = false, 2000)
+    setTimeout(() => this.showLoader = false, 0)
   }
 
 }
