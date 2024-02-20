@@ -6,10 +6,15 @@
   background-color: black;
   color: $silver;
   padding: 2rem 1rem;
-  display: flex;
-  flex-direction: column;
+  // display: flex;
+  // flex-direction: column;
   justify-content: space-around;
-  height: 100%;
+  // position: relative;
+  // width: 100%;
+  // bottom: 0;
+  // position: fixed;
+    width: 100%;
+    // bottom: 0;
     .branding {
     margin-bottom: 1rem;
   }
@@ -66,6 +71,13 @@
   }
 
 
+}
+@include lg {
+  // .footer-container{
+  //   position: fixed;
+  //   width: 100%;
+  //   bottom: 0;
+  // }
 }
 
 // Desktop

@@ -10,6 +10,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { ResumeComponent } from './pages/resume/resume.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { DetailsComponent } from './pages/details/details.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 const routes: Routes = [
   {
@@ -30,6 +31,7 @@ const routes: Routes = [
     BrowserModule,
     AppRoutingModule,
     ProfileModule,
+    BrowserAnimationsModule,
     RouterModule.forRoot(routes, {
       initialNavigation: 'enabledNonBlocking',
       scrollPositionRestoration: 'enabled'

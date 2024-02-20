@@ -8,9 +8,11 @@ import {init} from "aos";
 })
 export class AppComponent implements OnInit {
   title = 'portfolio';
+  showLoader = true
 
   ngOnInit(): void {
     init({startEvent: 'DOMContentLoaded'});
+    setTimeout(() => this.showLoader = false, 2000)
   }
 
 }

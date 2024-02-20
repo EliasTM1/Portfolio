@@ -2,3 +2,16 @@
   padding-top: 55px;
   // background-color:  #f5f2eb;
 }
+
+.fade-in {
+  animation: fadeIn 500ms ease-in-out; /* Adjust animation duration and timing function as needed */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

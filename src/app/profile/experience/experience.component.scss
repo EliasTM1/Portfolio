@@ -21,7 +21,6 @@
   }
 }
 
-
 .resume {
   margin-top: 2rem;
   // .technologies {
@@ -99,38 +98,43 @@
 .about-me {
   display: flex;
   flex-direction: column;
+  .img-container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    // width: 50%;
+    img {
+      width: 50%;
+    }
 
-  img {
-    width: 100%;
+    #postIt {
+      content: "";
+      width: 70%;
+      height: 50%;
+      z-index: -1;
+      background-color: rgba(0, 185, 241, 0.84);
+      position: absolute;
+      transform: rotate(15deg);
+      // left: 90px;
+    }
+    #postItOr {
+      content: "";
+      width: 70%;
+      height: 50%;
+      z-index: -1;
+      background-color: rgba(255, 145, 0, 0.921);
+      position: absolute;
+      transform: rotate(-15deg);
+      // left: 90px;
+    }
   }
 
-  #postIt {
-    content: "";
-    width: 70%;
-    height: 50%;
-    z-index: -1;
-    background-color: rgba(0, 185, 241, 0.84);
-    position: absolute;
-    transform: rotate(15deg);
-    left: 90px;
-  }
-  #postItOr {
-    content: "";
-    width: 70%;
-    height: 50%;
-    z-index: -1;
-    background-color: rgba(255, 145, 0, 0.921);
-    position: absolute;
-    transform: rotate(-15deg);
-    left: 90px;
-  }
-
-  p{
+  p {
     border: 0.2rem solid #05060f;
     box-shadow: 0.4rem 0.4rem #05060f;
     height: fit-content;
     padding: 1rem;
-    width: 600px;
+    // width: 40%;
     background-color: white;
     align-content: center;
     width: 400px;
@@ -148,69 +152,82 @@
 @include md {
   .about-me {
     display: flex;
-    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    .img-container {
+      width: 100%;
+      img {
+        width: 50%;
+      }
 
-    img {
-      width: 50%;
+      #postIt {
+        top: 80px !important;
+        width: 70%;
+        height: 50%;
+      }
+
+      #postItOr {
+        top: 80px !important;
+        width: 70%;
+        height: 50%;
+      }
+      p {
+        display: flex;
+        align-items: center;
+        margin: auto;
+      }
     }
 
-    #postIt {
-      width: 35%;
-      height: 50%;
-    }
-    #postItOr {
-      width: 35%;
-      height: 50%;
-    }
-
-    p{
-      display: flex;
-      align-items: center;
-      margin: auto;
-    }
   }
 }
+
+
+
 
 // Destok
 @include lg {
   .about-me {
     display: flex;
     flex-direction: row;
-
-    img {
+    .img-container {
       width: 50%;
+      img {
+        width: 80%;
+      }
+
+      #postIt {
+        content: "";
+        top: 200px;
+        width: 80%;
+        height: 50%;
+        z-index: -1;
+        background-color: rgba(0, 185, 241, 0.84);
+        position: absolute;
+        transform: rotate(20deg);
+        left: 90px;
+      }
+
+      #postItOr {
+        content: "";
+        top: 200px;
+        width: 80%;
+        height: 50%;
+        z-index: -1;
+        background-color: rgba(255, 145, 0, 0.921);
+        position: absolute;
+        transform: rotate(-15deg);
+        left: 90px;
+      }
     }
 
-    #postIt {
-      content: "";
-      width: 40%;
-      height: 50%;
-      z-index: -1;
-      background-color: rgba(0, 185, 241, 0.84);
-      position: absolute;
-      transform: rotate(20deg);
-      left: 90px;
-    }
-
-    #postItOr {
-      content: "";
-      width: 40%;
-      height: 50%;
-      z-index: -1;
-      background-color: rgba(255, 145, 0, 0.921);
-      position: absolute;
-      transform: rotate(-15deg);
-      left: 90px;
-    }
-
-    p{
+    p {
       // width: 300px;
       display: flex;
       align-items: center;
       margin: auto;
-      width: 600px;
+      // width: 600px;
+      margin-bottom: 1rem;
     }
   }
-
-
 }

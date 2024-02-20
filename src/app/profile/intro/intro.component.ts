@@ -9,7 +9,8 @@ export class IntroComponent implements OnInit {
 
   constructor() { }
 
-  roles = ['Front-End Developer 🧰', 'Angular 😍', 'React 🥰', 'AWS 😉', 'Oracle next education 🤓'];
+  // roles = ['Front-End Developer 🧰', 'Angular 😍', 'React 🥰', 'AWS 😉', 'Oracle next education 🤓'];
+  roles = ['Front-End Developer 🧰', 'Angular 😍', 'React 🥰', 'Oracle next education 🤓'];
 
 
   ngOnInit(): void {

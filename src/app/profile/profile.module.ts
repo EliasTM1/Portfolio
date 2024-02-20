@@ -17,6 +17,8 @@ import { AutoTypeComponent } from './auto-type/auto-type.component';
 import { ProjectDetailsComponent } from './project-details/project-details.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { ImgSliderComponent } from './img-slider/img-slider.component';
+import { LoaderComponent } from './loader/loader.component';
+
 
 
 
@@ -36,7 +38,8 @@ import { ImgSliderComponent } from './img-slider/img-slider.component';
     AutoTypeComponent,
     ProjectDetailsComponent,
     GalleryComponent,
-    ImgSliderComponent
+    ImgSliderComponent,
+    LoaderComponent
   ],
   imports: [
     CommonModule,
@@ -58,7 +61,8 @@ import { ImgSliderComponent } from './img-slider/img-slider.component';
     AutoTypeComponent,
     ProjectDetailsComponent,
     GalleryComponent,
-    ImgSliderComponent
+    ImgSliderComponent,
+    LoaderComponent
   ]
 })
 export class ProfileModule { }

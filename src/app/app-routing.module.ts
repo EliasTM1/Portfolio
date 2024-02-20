@@ -9,6 +9,7 @@ const routes: Routes = [
   {
     path: "home",
     component: HomeComponent,
+    // data: { animation: 'fadeIn' }
   },
   {
     path: "details/:encodedTitle",
@@ -17,6 +18,7 @@ const routes: Routes = [
   {
     path: "resume",
     component: ResumeComponent
+
   },
   {
     path: "contact",

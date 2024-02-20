@@ -56,10 +56,10 @@ export const skillSet : Skill[] = [
     technology: "Github",
     icon: '../../../assets/images/techIcons/github-142-svgrepo-com (1).svg',
   },
-  {
-    technology: "AWS",
-    icon: '../../../assets/images/techIcons/aws-svgrepo-com (1).svg',
-  },
+  // {
+  //   technology: "AWS",
+  //   icon: '../../../assets/images/techIcons/aws-svgrepo-com (1).svg',
+  // },
 
 
 ]

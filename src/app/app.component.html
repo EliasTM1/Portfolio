@@ -1,5 +1,6 @@
 <app-header></app-header>
 <div class="page-container">
-  <router-outlet  data-aos="fade-up" ></router-outlet>
+  <app-loader *ngIf="showLoader"></app-loader>
+  <router-outlet class="fade-in" *ngIf="!showLoader"  data-aos="fade-up" ></router-outlet>
+  <app-footer *ngIf="!showLoader"></app-footer>
 </div>
-<app-footer></app-footer>
