@@ -2,21 +2,19 @@
   <nav>
     <div class="logos" routerLink="/home">E T M</div>
     <div
-      [ngClass]="
-        collapseMenu === true ? 'nav-container' : 'nav-container-active'
-      "
+    [ngClass]="collapseMenu === true ? 'nav-container' : 'nav-container-active'"
     >
       <ul (click)="toggleCollapse()">
-        <li routerLinkActive="active" routerLink="home">Work</li>
-        <li routerLinkActive="active" routerLink="resume">About me</li>
-        <li routerLinkActive="active" routerLink="contact">Contact</li>
-        <li id="downloadCV"><a href="../../../assets/EliasResume.pdf" download="EliasResume.pdf">Download CV</a></li>
+        <li [ngClass]="!menuItems ? 'nav-container' : 'nav-container-active'" routerLinkActive="active" routerLink="home">Work</li>
+        <li [ngClass]="!menuItems ? 'nav-container' : 'nav-container-active'" routerLinkActive="active" routerLink="resume">About me</li>
+        <li [ngClass]="!menuItems ? 'nav-container' : 'nav-container-active'" routerLinkActive="active" routerLink="contact">Contact</li>
+        <li [ngClass]="!menuItems ? 'nav-container' : 'nav-container-active'" id="downloadCV"><a href="../../../assets/EliasResume.pdf" download="EliasResume.pdf">Download CV</a></li>
       </ul>
     </div>
     <div class="burger-container" (click)="toggleCollapse()">
       <button
         class="hamburger hamburger--emphatic burger"
-        [ngClass]="collapseMenu === true ? '' : 'is-active'"
+        [ngClass]="!menuItems === true ? '' : 'is-active'"
         type="button"
       >
         <span class="hamburger-box">

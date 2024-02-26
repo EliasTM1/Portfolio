@@ -1,5 +1,5 @@
-@import '/src/styles/_abstracts-dir';
-@import '/src/styles/_components-dir';
+@import "/src/styles/_abstracts-dir";
+@import "/src/styles/_components-dir";
 
 //  Mobile
 .intro-container {
@@ -7,7 +7,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #F8F3F0;
+  background-color: #f8f3f0;
   border-bottom: 2px solid black;
   width: 100%;
   height: fit-content;
@@ -28,7 +28,10 @@
       width: 70%;
     }
   }
+}
 
+.fade-in {
+  animation: fadeIn 500ms ease-in-out; /* Adjust animation duration and timing function as needed */
 }
 
 .greet-container {
@@ -44,13 +47,12 @@
     .techIcon {
       width: 20px;
     }
-
   }
 
   .dev-sub-header {
     background-color: black;
     color: white;
-    padding: .2rem .4rem;
+    padding: 0.2rem 0.4rem;
   }
 }
 
@@ -109,7 +111,6 @@
       .techIcon {
         width: 40px;
       }
-
     }
     display: flex;
     flex-direction: column;
@@ -118,14 +119,19 @@
     flex-grow: 1;
     margin: auto 10rem;
 
-    .dev-name {}
+    .dev-name {
+    }
 
-    .dev-sub-header {}
+    .dev-sub-header {
+    }
 
-    .quick-bio {}
+    .quick-bio {
+    }
   }
 
-  .button-container {}
+  .button-container {
+  }
 
-  .dark-button {}
+  .dark-button {
+  }
 }

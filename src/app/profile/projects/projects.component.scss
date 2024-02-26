@@ -1,6 +1,11 @@
 @import "/src/styles/_abstracts-dir";
 
+
+.fade-in {
+  animation: fadeIn 500ms ease-in-out; /* Adjust animation duration and timing function as needed */
+}
 section {
+
   // Mobile
   .projects-container {
     padding-bottom: 2rem;

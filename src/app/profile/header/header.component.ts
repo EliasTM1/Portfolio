@@ -11,6 +11,7 @@ export class HeaderComponent implements OnInit {
   public getScreenWidth: any;
   public getScreenHeight: any;
   public collapseMenu: boolean = false;
+  public menuItems: boolean = false;
   public responsiveBrk : number = 768;
   public resumeUrl: string = '/assets/your-resume.pdf';
 
@@ -20,11 +21,13 @@ export class HeaderComponent implements OnInit {
   }
 
   toggleCollapse(): void {
-
     if (this.getScreenWidth >= this.responsiveBrk)
-      return;
+    return;
 
 
+  setTimeout(() => {
+    this.menuItems = !this.menuItems
+  }, 50)
     this.collapseMenu = !this.collapseMenu;
     console.log(this.collapseMenu);
   }

@@ -21,6 +21,10 @@
   }
 }
 
+.fade-in {
+  animation: fadeIn 500ms ease-in-out; /* Adjust animation duration and timing function as needed */
+}
+
 .resume {
   margin-top: 2rem;
   .techIcon {
