@@ -6,17 +6,18 @@
   background-color: #f8f3f0;
   border-bottom: solid 2px black;
   .section-title {
-    @include section-title;
     padding: 1rem;
+    @include section-title;
   }
   .section-description {
     text-align: center;
     width: 90%;
+    margin: 2rem auto;
+    line-height: 25px;
+
     @include lg {
       width: 60%;
     }
-    margin: 2rem auto;
-    line-height: 25px;
   }
 }
 
@@ -39,6 +40,7 @@
 
   .title-deco {
     @include dark-header;
+    margin-bottom: 2rem;
   }
 
   .sub-header {
@@ -89,12 +91,14 @@
 .about-me {
   display: flex;
   flex-direction: column;
+  width: 100%;
+  margin-top: 2rem;
   .img-container {
     display: flex;
     justify-content: center;
     position: relative;
     img {
-      width: 50%;
+      width: 80%;
     }
 
     #postIt {
@@ -124,16 +128,14 @@
     padding: 1rem;
     background-color: white;
     align-content: center;
-    width: 400px;
-    border-radius: .5rem;
+    width: 90%;
+    border-radius: 0.5rem;
     display: flex;
     margin: auto;
     justify-content: center;
     margin-bottom: 2rem;
   }
 }
-
-
 
 // Tablet
 @include md {
@@ -142,6 +144,7 @@
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
+    // margin-top: 2rem;
     .img-container {
       width: 100%;
       img {
@@ -163,14 +166,11 @@
         display: flex;
         align-items: center;
         margin: auto;
+        width: 90%;
       }
     }
-
   }
 }
-
-
-
 
 // Destok
 @include lg {
@@ -212,6 +212,7 @@
       display: flex;
       align-items: center;
       margin: auto;
+      width: 40%;
     }
   }
 }
