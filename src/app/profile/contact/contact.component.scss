@@ -2,15 +2,11 @@
 @import '/src/styles/_components-dir';
 
 // Mobile
-#contact {
-  // background-color: #F8F3F0;
-}
 
 .title-container {
   width: 100%;
   text-align: center;
   background-color: #F8F3F0;
-  // padding-block: 2rem;
   padding-top: 2rem;
   padding-bottom: 3rem;
   border-bottom: 2px solid black
@@ -31,8 +27,6 @@
 .contact-container {
   display: flex;
   flex-direction: column;
-  // margin-top: 2rem;
-  // border-top: 1px solid $black;
   padding-top: 2rem;
 
 
@@ -46,7 +40,6 @@
   img {
     width: 80%;
     margin-bottom: 2rem;
-    // filter: invert(1);
   }
 }
 
@@ -54,13 +47,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  // margin: auto;
   margin-top: 3rem;
   width: 100%;
-  // background-color: black;
 
   form {
-    // color: white;
     width: 70%;
     display: flex;
     flex-direction: column;
@@ -72,14 +62,11 @@
 
     label {
       padding-bottom: 1rem;
-      // letter-spacing: .2rem;
     }
 
     input {
       outline: none;
-      // letter-spacing: 3px;
       border: 0;
-      // border: 1px $black solid;
       border: 1px gray solid;
       padding: 8px;
       border-radius: .5rem;
@@ -110,7 +97,6 @@
 @include md {
   .form-container {
     margin: auto;
-    // width: 100% !important;
   }
 }
 

@@ -36,18 +36,6 @@ export const skillSet : Skill[] = [
     technology: "Redux",
     icon: '../../../assets/images/techIcons/redux.svg',
   },
-  // {
-  //   technology: "NodeJS",
-  //   icon: '../../../assets/images/techIcons/node-js-svgrepo-com (1).svg',
-  // },
-  // {
-  //   technology: "ExpressJS",
-  //   icon: '../../../assets/images/techIcons/express-svgrepo-com (1).svg',
-  // },
-  // {
-  //   technology: "MongoDB",
-  //   icon: '../../../assets/images/techIcons/mongo-svgrepo-com (1).svg',
-  // },
   {
     technology: "Git",
     icon: '../../../assets/images/techIcons/git-svgrepo-com (1).svg',
@@ -56,10 +44,6 @@ export const skillSet : Skill[] = [
     technology: "Github",
     icon: '../../../assets/images/techIcons/github-142-svgrepo-com (1).svg',
   },
-  // {
-  //   technology: "AWS",
-  //   icon: '../../../assets/images/techIcons/aws-svgrepo-com (1).svg',
-  // },
 
 
 ]

@@ -6,13 +6,9 @@
   left: 0;
   width: 100%;
   height: 100%;
-  // background-color: rgba(255, 255, 255, 0.5);
-  // background-color: rgba(255, 255, 255);
   background-color: #F8F3F0;
   display: flex;
   justify-content: center;
-  // transition: opacity 0.5s; /* Add transition property */
-
   align-items: center;
   z-index: 9999;
 
@@ -26,8 +22,20 @@
     font-size: 25px;
     font-weight: bold;
     animation: fadeIn .2s ease-in-out;
-    // font-family: "EB Garamond", serif
   }
+}
+
+.loaderText {
+  --c: no-repeat linear-gradient(rgba(0, 153, 255, 0.714) 0 0);
+  background:
+    var(--c)  calc(-101% + var(--p,0%)) 100%,
+    var(--c)  calc( 201% - var(--p,0%)) 0;
+  background-size: 50.1% var(--p,.08em);
+  transition: .3s var(--t,0s), background-position .3s calc(.3s - var(--t,0s));
+}
+.loaded {
+  --p: 101%;
+  --t: 0.3s;
 }
 
 .loader {
@@ -37,28 +45,4 @@
   width: 80px;
   height: 80px;
   animation: spin 600ms alternate infinite;
-}
-
-@keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
-
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes fadeOut {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-  }
 }

@@ -6,15 +6,8 @@
   background-color: black;
   color: $silver;
   padding: 2rem 1rem;
-  // display: flex;
-  // flex-direction: column;
   justify-content: space-around;
-  // position: relative;
-  // width: 100%;
-  // bottom: 0;
-  // position: fixed;
     width: 100%;
-    // bottom: 0;
     .branding {
     margin-bottom: 1rem;
   }
@@ -26,9 +19,6 @@
     .section-title {
       font-weight: bolder !important;
       margin-top: .5rem;
-      // .branding {
-      //   color: red;
-      // }
     }
 
     ul{
@@ -42,7 +32,6 @@
       cursor: pointer;
 
       &:hover {
-        // border-bottom: 1px solid $silver;
         text-decoration: underline;
       }
     }
@@ -73,18 +62,12 @@
 
 }
 @include md {
-  // .footer-container{
-  //   position: fixed;
-  //   width: 100%;
-  //   bottom: 0;
-  // }
 }
 
 // Desktop
 @include lg {
 
   .footer-container{
-    // background-color: red;
     display: flex;
     flex-direction: row;
     .social {

@@ -1,12 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { BehaviorSubject, Observable } from 'rxjs';
-// import { trigger, transition, style, animate } from '@angular/animations';
-
-// export const fadeOut = trigger('fadeOut', [
-//   transition(':leave', [
-//     animate('1.5s', style({ opacity: 0 }))
-//   ])
-// ]);
 
 @Component({
   selector: 'app-loader',
@@ -14,16 +7,16 @@ import { BehaviorSubject, Observable } from 'rxjs';
   styleUrls: ['./loader.component.scss']
 })
 export class LoaderComponent implements OnInit {
-  private showLoaderSubject = new BehaviorSubject<boolean>(true);
-  showLoader$: Observable<boolean> = this.showLoaderSubject.asObservable();
+  public showLoaderSubject = false
+  public initTrue = true
 
 
   constructor() { }
 
   ngOnInit(): void {
     setTimeout(() => {
-      this.showLoaderSubject.next(false); // Hide loader after 1 second
-    }, 1000);
+      this.showLoaderSubject = true
+    }, 400);
   }
 
 }

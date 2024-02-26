@@ -1,5 +1,5 @@
-<div class="loader-container" [@fadeOut]>
-  <img src="../../../assets/images/load.svg">
-  <div class="loader"></div>
-  <span>Loading Projects</span>
+<div class="loader-container"  [ngClass]="{'fade-in': initTrue, 'fade-out-header': !initTrue}">
+  <span class="loaderText" [ngClass]="{ loaded: !showLoaderSubject }"
+    >Loading Projects</span
+  >
 </div>

@@ -7,6 +7,11 @@
   animation: fadeIn 500ms ease-in-out; /* Adjust animation duration and timing function as needed */
 }
 
+.fade-out {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;

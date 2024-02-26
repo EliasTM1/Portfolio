@@ -5,7 +5,6 @@
   padding: 1rem;
   background-color: #f8f3f0;
   border-bottom: solid 2px black;
-  // letter-spacing: 1px;
   .section-title {
     @include section-title;
     padding: 1rem;
@@ -23,12 +22,6 @@
 
 .resume {
   margin-top: 2rem;
-  // .technologies {
-  //   display: flex;
-  //   justify-content: space-around;
-  //   margin-bottom: 2rem;
-  // }
-
   .techIcon {
     width: 50px;
   }
@@ -73,9 +66,7 @@
       width: 70px;
       transform: skew(-50deg);
       z-index: -1;
-      // margin-top: 5px;
       content: "";
-      // background-color: #F8F3F0;
       background-color: #2cadee8d;
       height: 4px;
     }
@@ -102,7 +93,6 @@
     display: flex;
     justify-content: center;
     position: relative;
-    // width: 50%;
     img {
       width: 50%;
     }
@@ -115,7 +105,6 @@
       background-color: rgba(0, 185, 241, 0.84);
       position: absolute;
       transform: rotate(15deg);
-      // left: 90px;
     }
     #postItOr {
       content: "";
@@ -125,7 +114,6 @@
       background-color: rgba(255, 145, 0, 0.921);
       position: absolute;
       transform: rotate(-15deg);
-      // left: 90px;
     }
   }
 
@@ -134,7 +122,6 @@
     box-shadow: 0.4rem 0.4rem #05060f;
     height: fit-content;
     padding: 1rem;
-    // width: 40%;
     background-color: white;
     align-content: center;
     width: 400px;
@@ -222,12 +209,9 @@
     }
 
     p {
-      // width: 300px;
       display: flex;
       align-items: center;
       margin: auto;
-      // width: 600px;
-      // margin-bottom: 1rem;
     }
   }
 }

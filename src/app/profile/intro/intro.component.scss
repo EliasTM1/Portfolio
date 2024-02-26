@@ -26,7 +26,6 @@
   @include sm {
     img {
       width: 70%;
-      // margin-bottom: 5rem;
     }
   }
 
@@ -73,7 +72,6 @@
   }
 
   .dark-button:hover {
-    // @include black-button;
     background-color: white;
     color: black;
   }
@@ -86,7 +84,6 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    // margin: auto 1rem;
   }
 
   .image-container {

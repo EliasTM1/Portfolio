@@ -3,7 +3,6 @@ export type Difficulty = {
   projectId: number;
 }
 
-// type availableStack = "angular" | "vanillaDev" | "node" | "mean"
 
 export const filterCategories : Difficulty[] = [
   {
