@@ -5,16 +5,16 @@
     [ngClass]="collapseMenu === true ? 'nav-container' : 'nav-container-active'"
     >
       <ul (click)="toggleCollapse()">
-        <li [ngClass]="!menuItems ? 'nav-container' : 'nav-container-active'" routerLinkActive="active" routerLink="home">Work</li>
-        <li [ngClass]="!menuItems ? 'nav-container' : 'nav-container-active'" routerLinkActive="active" routerLink="resume">About me</li>
-        <li [ngClass]="!menuItems ? 'nav-container' : 'nav-container-active'" routerLinkActive="active" routerLink="contact">Contact</li>
-        <li [ngClass]="!menuItems ? 'nav-container' : 'nav-container-active'" id="downloadCV"><a href="../../../assets/EliasResume.pdf" download="EliasResume.pdf">Download CV</a></li>
+        <li [ngClass]="collapseMenu ? 'nav-container' : 'nav-container-active'" routerLinkActive="active" routerLink="home">Work</li>
+        <li [ngClass]="collapseMenu ? 'nav-container' : 'nav-container-active'" routerLinkActive="active" routerLink="resume">About me</li>
+        <li [ngClass]="collapseMenu ? 'nav-container' : 'nav-container-active'" routerLinkActive="active" routerLink="contact">Contact</li>
+        <li [ngClass]="collapseMenu ? 'nav-container' : 'nav-container-active'" id="downloadCV"><a href="../../../assets/EliasResume.pdf" download="EliasResume.pdf">Download CV</a></li>
       </ul>
     </div>
     <div class="burger-container" (click)="toggleCollapse()">
       <button
         class="hamburger hamburger--emphatic burger"
-        [ngClass]="!menuItems === true ? '' : 'is-active'"
+        [ngClass]="collapseMenu === true ? '' : 'is-active'"
         type="button"
       >
         <span class="hamburger-box">
