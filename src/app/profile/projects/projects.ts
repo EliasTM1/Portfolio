@@ -1,5 +1,6 @@
 export type Project = {
   details: ProjectDetails;
+  cardMedia?: string
   demo: string;
   description: string;
   repo: string;
@@ -177,6 +178,7 @@ export const currentProjects: Project[] = [
       'Angular app that allows you to search for recipes and see their ingredients and instructions.',
     technologiesUsed: ['HTML', 'CSS', 'JavaScript'],
     projectId: 5,
+    cardMedia: '',
     difficulty: 'Fundamental',
     repo: 'http://example.com/project1',
     solving:
@@ -248,6 +250,7 @@ export const currentProjects: Project[] = [
       'Angular app that allows you to search for products and add them to your cart and checkout.',
     technologiesUsed: ['HTML', 'CSS', 'JavaScript'],
     projectId: 5,
+    cardMedia: '../../../assets/images/colordev.jpeg',
     difficulty: 'Complex',
     repo: 'http://example.com/project1',
     solving: 'F',
@@ -309,6 +312,7 @@ export const currentProjects: Project[] = [
       'Allows you to search for products and add them to your cart and checkout.',
     technologiesUsed: ['HTML', 'CSS', 'JavaScript'],
     projectId: 5,
+    cardMedia: '',
     difficulty: 'Medium',
     repo: 'http://example.com/project1',
     solving: '',
