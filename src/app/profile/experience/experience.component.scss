@@ -56,6 +56,7 @@
     border: 0.2rem solid #05060f;
     box-shadow: 0.4rem 0.4rem #05060f;
     padding: 1rem;
+    border-radius: .5rem;
     width: 90%;
     @include sm {
       width: 90%;
@@ -95,6 +96,7 @@
 }
 
 .about-me {
+  padding-bottom: 1rem;
   display: flex;
   flex-direction: column;
   width: 100%;
