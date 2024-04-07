@@ -16,8 +16,9 @@ export class ProjectDetailsComponent implements OnInit {
     description: '',
     repo: '',
     title: '',
-    technologiesUsed:[],
-    details : {
+    technologiesUsed: [],
+    solving: '',
+    details: {
       bannerImg: '',
       subBannerImg: '',
       description: '',
@@ -25,10 +26,11 @@ export class ProjectDetailsComponent implements OnInit {
       features: [],
       projectMedia: [],
     },
-    sliderInfo: []
+    conclussion: '',
+    learned: '',
+    sliderInfo: [],
   };
-  featureListOne : string[] = []
-  featureListTwo : string[] = []
+  featureList: string[] = [];
 
   constructor(private route: ActivatedRoute) {}
 
@@ -43,15 +45,16 @@ export class ProjectDetailsComponent implements OnInit {
     });
   }
 
-  getProjectDetails()  {
+  getProjectDetails() {
     const project = currentProjects.find(
       (project: Project) => project.title === this.urlProjectName
     );
     if (project !== undefined) {
-      this.currentProject = project
-      this.featureListOne = project!.details!.features.slice(0, project!.details!.features.length / 2);
-      this.featureListTwo = project!.details!.features.slice(project!.details!.features.length / 2);
+      this.currentProject = project;
+      this.featureList = project!.details!.features.slice(
+        0,
+        project!.details!.features.length
+      );
     }
-
   }
 }

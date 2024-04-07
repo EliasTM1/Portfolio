@@ -15,7 +15,7 @@
   </div>
 </section>
 <section class="fade-in">
-  <app-scrolling-marquee [legend]="'TAKE A LOOOK TO THE LIVE DEMO - ROAST MY CODE'"></app-scrolling-marquee>
+  <app-scrolling-marquee [color]="'red'" [legend]="'TAKE A LOOOK TO THE LIVE DEMO - ROAST MY CODE'"></app-scrolling-marquee>
   <div class="repo-container">
     <h3>Please check the repo:</h3>
     <button>
@@ -26,14 +26,13 @@
     <div class="project-features">
       <h3>Core features</h3>
       <ul>
-        <div *ngFor="let feature of featureListOne">
+        <div *ngFor="let feature of featureList">
           <li>{{ feature }}</li>
         </div>
       </ul>
       <h3>What problem is solved?</h3>
       <ul>
-        This is a section where I explain why I choose to build this app and
-        what problem im trying to solve with this.
+        {{currentProject.solving}}
       </ul>
       <h3>Technologies</h3>
       <section class="technologies">

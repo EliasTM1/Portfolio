@@ -11,4 +11,5 @@ export class ScrollingMarqueeComponent implements OnInit {
   ngOnInit(): void {}
 
   @Input() legend: string = '';
+  @Input() color?: string = '';
 }
