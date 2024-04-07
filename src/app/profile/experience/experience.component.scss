@@ -25,7 +25,7 @@
   animation: fadeIn 500ms ease-in-out; /* Adjust animation duration and timing function as needed */
 }
 
-.resume {
+.experience-section {
   margin-top: 2rem;
   .techIcon {
     width: 50px;
@@ -52,22 +52,24 @@
   }
 
   .experience-sub {
-    border: 2px ridge $silver;
+    // border: 2px ridge $silver;
+    border: 0.2rem solid #05060f;
+    box-shadow: 0.4rem 0.4rem #05060f;
     padding: 1rem;
     width: 90%;
     @include sm {
       width: 90%;
     }
-    margin-top: 3rem;
+    // margin-top: 3rem;
     margin-bottom: 3rem;
 
-    .company-name {
+    .role {
       margin-top: 1.5rem;
       font-size: 1.3rem;
       letter-spacing: 0.1rem;
     }
 
-    .company-name::before {
+    .role::before {
       position: absolute;
       width: 70px;
       transform: skew(-50deg);
@@ -82,7 +84,7 @@
       }
     }
 
-    .job-title {
+    .company {
       margin-bottom: 1rem;
     }
 

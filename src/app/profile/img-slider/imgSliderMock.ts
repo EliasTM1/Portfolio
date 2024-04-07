@@ -17,7 +17,7 @@ export const slides: Slide[] = [
   {
     src: 'https://mariongrandvincent.github.io/HTML-Personal-website/img-codePen/letter-a.jpg',
     title: 'Daily Design Inspiration',
-    description: 'Part of the Daily Design Inspiration series that started it all on Abduzeedo. This is where you\'ll find the most interesting things/finds/work curated by one of us to simply inspire your day.',
+    description: 'Part of the Daily Design Inspiration series that started it all on Abduzeedo. This is where you\'ll find the most interesting things/finds/work curated by one of us to simply inspire your day.Part of the Daily Design Inspiration series that started it all on Abduzeedo. This is where you\'ll find the most interesting things/finds/work curated by one of us to simply inspire your day.Part of the Daily Design Inspiration series that started it all on Abduzeedo. This is where you\'ll find the most interesting things/finds/work curated by one of us to simply inspire your day.',
     active: true
   },
   {

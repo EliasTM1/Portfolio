@@ -1,4 +1,4 @@
-<section id="header-details">
+<section id="header-details" class="fade-in">
   <div class="banner-container">
     <img class="banner-img" />
     <!-- <img
@@ -14,41 +14,100 @@
     </p>
   </div>
 </section>
-<section>
-  <div class="project-info">
-    <div class="project-features">
-      <h3>Features</h3>
-      <ul>
-        <div *ngFor="let feature of featureListOne">
-          <li>{{ feature }}</li>
-        </div>
-      </ul>
-    </div>
-    <div class="project-media">
-      <h3>*</h3>
-      <ul>
-        <div *ngFor="let feature of featureListOne">
-          <li>{{ feature }}</li>
-        </div>
-      </ul>
-    </div>
-  </div>
-  <!-- TODO: This is the real place of img slider -->
-  <app-img-slider [projectData]="currentProject.sliderInfo"></app-img-slider>
-  <div class="project-info">
-    <div class="project-conclusion">
-      <h3>Features</h3>
-      <ul>
-        <div *ngFor="let feature of featureListOne">
-          <li>{{ feature }}</li>
-        </div>
-      </ul>
-    </div>
-  </div>
+<section class="fade-in">
+  <app-scrolling-marquee [legend]="'TAKE A LOOOK TO THE LIVE DEMO - ROAST MY CODE'"></app-scrolling-marquee>
   <div class="repo-container">
     <h3>Please check the repo:</h3>
     <button>
       <a href="{{ currentProject.repo }}">GitHub repo.</a>
     </button>
+  </div>
+  <div class="project-info">
+    <div class="project-features">
+      <h3>Core features</h3>
+      <ul>
+        <div *ngFor="let feature of featureListOne">
+          <li>{{ feature }}</li>
+        </div>
+      </ul>
+      <h3>What problem is solved?</h3>
+      <ul>
+        This is a section where I explain why I choose to build this app and
+        what problem im trying to solve with this.
+      </ul>
+      <h3>Technologies</h3>
+      <section class="technologies">
+        <img
+          class="techIcon"
+          src="../../../assets/images/techIcons/html-5-svgrepo-com.svg"
+        />
+        <img
+          class="techIcon"
+          src="../../../assets/images/techIcons/css-3-svgrepo-com (1).svg"
+        />
+        <img
+          class="techIcon"
+          src="../../../assets/images/techIcons/js-svgrepo-com.svg"
+        />
+        <img
+          class="techIcon"
+          src="../../../assets/images/techIcons/react-javascript-js-framework-facebook-svgrepo-com.svg"
+        />
+        <img
+          id="chakraIcon"
+          src="../../../assets/images/techIcons/chakraUI.svg"
+        />
+        <img
+          class="techIcon"
+          src="../../../assets/images/techIcons/ng-component-scss-svgrepo-com.svg"
+        />
+        <img
+          class="techIcon"
+          src="../../../assets/images/techIcons/aws-svgrepo-com (1).svg"
+        />
+
+        <img
+          class="techIcon"
+          src="../../../assets/images/techIcons/github-142-svgrepo-com.svg"
+        />
+        <img
+          class="techIcon"
+          src="../../../assets/images/techIcons/git-svgrepo-com.svg"
+        />
+
+        <img
+          class="techIcon"
+          src="../../../assets/images/techIcons/node-js-svgrepo-com.svg"
+        />
+
+        <img
+          class="techIcon"
+          src="../../../assets/images/techIcons/redux.svg"
+        />
+      </section>
+    </div>
+  </div>
+  <!-- TODO: This is the real place of img slider -->
+  <!-- <app-img-slider [projectData]="currentProject.sliderInfo"></app-img-slider> -->
+  <div class="project-info">
+    <div class="project-conclusion">
+      <h3>What I leanred from this project:</h3>
+      <ul>
+        This is a section where I explain why I choose to build this app and
+        what problem im trying to solve with this.
+      </ul>
+      <div class="container">
+        <div class="wrapper">
+          <img src="../../../assets/images/cool.jpg" alt="fda" />
+          <!-- <video src="../../../assets/video/dashboard.mp4" autoplay="true"></video> -->
+        </div>
+      </div>
+
+      <h3>Conclussion:</h3>
+      <ul>
+        This is a section where I explain why I choose to build this app and
+        what problem im trying to solve with this.
+      </ul>
+    </div>
   </div>
 </section>

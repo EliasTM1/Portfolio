@@ -1,11 +1,13 @@
 #header-details {
-  background-color: #F8F3F0;
+  background-color: #f8f3f0;
   border-bottom: 2px solid black;
 }
 
+.fade-in {
+  animation: fadeIn 500ms ease-in-out; /* Adjust animation duration and timing function as needed */
+}
 
 section {
-
   .banner-container {
     display: flex;
     justify-content: center;
@@ -35,7 +37,28 @@ section {
     margin: 1.5rem 1rem;
 
     .project-features {
-      width: 50%;
+      width: 100%;
+      h3 {
+        padding-top: 10px;
+        padding-bottom: 5px;
+      }
+      .technologies {
+        display: flex;
+        #chakraIcon {
+          width: 80px;
+        }
+        .techIcon {
+          width: 40px;
+        }
+      }
+      .technologies img {
+        justify-items: center;
+        margin: auto;
+        // flex-direction: row;
+        justify-items: center;
+        width: 25px;
+      }
+
     }
 
     .project-conclusion {
@@ -44,6 +67,32 @@ section {
 
     .project-media {
       width: 50%;
+    }
+
+    .container {
+      border: 1px solid black;
+      // height: 'fit-content';
+      height: 'fit-content';
+      padding: 0;
+      margin: 40px auto;
+      display: block;
+      position: relative;
+      overflow: hidden;
+      border: 0.5vmin solid #05060f;
+      box-shadow: 0.4rem 0.4rem #05060f;
+      border-radius: 0.5rem;
+      width: 100%;
+    }
+
+    .wrapper {
+      height: fit-content;
+      width: 100%;
+
+      img, video {
+        object-fit: cover;
+        width: 100% !important;
+        height: auto !important;
+      }
     }
   }
 
